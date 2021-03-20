@@ -2015,6 +2015,7 @@ ol {
   }
 
   .hero__slider.owl-carousel .owl-dots {
+    display: none;
     max-width: auto;
     padding: 0 15px;
   }
