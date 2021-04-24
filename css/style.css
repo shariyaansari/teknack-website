@@ -842,7 +842,7 @@ ol {
   text-transform: uppercase;
   margin-bottom: 55px;
 }
-.callto__text a {
+/* .callto__text a {
   color: #ffffff;
   background: #00bfe7;
   font-size: 15px;
@@ -852,7 +852,7 @@ ol {
   text-transform: uppercase;
   display: inline-block;
   padding: 14px 32px 12px;
-}
+} */
 
 /*---------------------
   Footer
