@@ -327,13 +327,13 @@ ol {
 }
 .header__nav__menu ul li.active a:after {
   -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 .header__nav__menu ul li:hover a:after {
   -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 .header__nav__menu ul li:hover .dropdown {
   top: 34px;
@@ -389,8 +389,8 @@ ol {
   background: #00bfe7;
   content: "";
   -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
   -webkit-transition: all, 0.3s;
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
@@ -541,11 +541,11 @@ ol {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .work__item:hover .work__item__hover {
   bottom: 0;
@@ -629,18 +629,18 @@ ol {
   background: #1a083d;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
+  transform: rotate(45deg);
   height: 255px;
   width: 255px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center;
   position: relative;
   z-index: 1;
@@ -686,7 +686,7 @@ ol {
 .counter__item__text {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
-      transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .counter__item__text h2 {
   font-size: 60px;
@@ -937,7 +937,7 @@ ol {
   height: 50px;
   width: 100%;
   padding-left: 20px;
-  border: 1px solid #544E5E;
+  border: 1px solid #544e5e;
   background: transparent;
   font-size: 16px;
   color: #adadad;
@@ -1045,7 +1045,7 @@ ol {
   padding-left: 30px;
 }
 .about__text .services__item .services__item__icon:after {
-  border-color: #281A3E;
+  border-color: #281a3e;
 }
 
 .about__text__desc {
@@ -1082,7 +1082,7 @@ ol {
 
 .testimonial__text {
   padding: 30px 40px 25px 30px;
-  border: 1px solid #3D3A64;
+  border: 1px solid #3d3a64;
   margin-bottom: 25px;
   position: relative;
   z-index: 9;
@@ -1144,7 +1144,7 @@ ol {
 .services__item:hover .services__item__icon:after {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .services__item h4 {
   color: #ffffff;
@@ -1238,11 +1238,11 @@ ol {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-bottom: 28px;
 }
 .portfolio__item__video .play-btn {
@@ -1569,12 +1569,14 @@ ol {
   margin-right: 0;
   margin-left: 5px;
 }
-.blog__details__option__item.blog__details__option__item--right .blog__details__option__item__img {
+.blog__details__option__item.blog__details__option__item--right
+  .blog__details__option__item__img {
   float: right;
   margin-right: 0;
   margin-left: 25px;
 }
-.blog__details__option__item.blog__details__option__item--right .blog__details__option__item__text {
+.blog__details__option__item.blog__details__option__item--right
+  .blog__details__option__item__text {
   margin-right: 25px;
   text-align: right;
   float: none;
@@ -1674,7 +1676,6 @@ ol {
 .input__list input:placeholder {
   color: #adadad;
 }
-
 
 /*---------------------
   Contact Widget
@@ -1804,7 +1805,7 @@ select {
 option {
   color: #111;
 }
-.input{
+.input {
   color: #e1e1e1;
 }
 
@@ -1865,7 +1866,7 @@ option {
   .counter__item {
     -webkit-transform: rotate(0);
     -ms-transform: rotate(0);
-        transform: rotate(0);
+    transform: rotate(0);
     margin-bottom: 30px;
     width: auto;
   }
@@ -1889,7 +1890,7 @@ option {
   .counter__item__text {
     -webkit-transform: rotate(0);
     -ms-transform: rotate(0);
-        transform: rotate(0);
+    transform: rotate(0);
   }
 
   .counter {
@@ -1939,7 +1940,7 @@ option {
   }
 
   .slicknav_nav .slicknav_row,
-.slicknav_nav a {
+  .slicknav_nav a {
     padding: 7px 0;
     margin: 0;
     color: #ffffff;
@@ -1986,7 +1987,7 @@ option {
   .counter__item {
     -webkit-transform: rotate(0);
     -ms-transform: rotate(0);
-        transform: rotate(0);
+    transform: rotate(0);
     margin-bottom: 30px;
     width: auto;
   }
@@ -2010,7 +2011,7 @@ option {
   .counter__item__text {
     -webkit-transform: rotate(0);
     -ms-transform: rotate(0);
-        transform: rotate(0);
+    transform: rotate(0);
   }
 
   .counter {
@@ -2062,7 +2063,7 @@ option {
   }
 
   .slicknav_nav .slicknav_row,
-.slicknav_nav a {
+  .slicknav_nav a {
     padding: 7px 0;
     margin: 0;
     color: #ffffff;
@@ -2208,12 +2209,66 @@ input:-internal-autofill-selected {
   background: transparent !important;
 }
 
-
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active
-{
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px #100028 inset;
- -webkit-text-fill-color: #e1e1e1 !important;
+  -webkit-text-fill-color: #e1e1e1 !important;
+}
+.modal {
+  width: 100%;
+  
+}
+.modal-dialog {
+  margin-top: 10%;
+}
+#staticBackdrop .modal-body {
+  padding: 0;
+  border-radius: 20px;
+}
+#staticBackdrop img,
+.modal,
+.modal-content,
+.modal-dialog {
+  border-radius: 20px;
+}
+
+#staticBackdrop img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+
+.modal-footer, .modal-content {
+  background-color: #100028;
+  border: none;
+  border-radius: 20px;
+}
+
+#staticBackdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#closeModal {
+  background-color: #fff;
+  outline: none;
+  border-radius: 5px;
+  z-index: 100;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  /* padding: 10px; */
+}
+
+#descTeknack {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+#descTeknack a {
+  color: #4abfd6;
 }
