@@ -415,14 +415,15 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzIylmP022dtmZ6hCanzL8qAcToXMiUY93zxgPnxP_cIB9iFNVMWmEgE5q6Ma33rNkk/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxdAk5P0cz98xtt6fT4gHiQ2O3uch6aZbWJ6HAJzBmW/dev'
         const form = document.forms['teknack-2022-reg']
 
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => $('#successModal').modal('show'))
-                // alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                // $('#successModal').modal('show'))
+                
                 .catch(error => console.error('Error!', error.message))
         })
     </script>
