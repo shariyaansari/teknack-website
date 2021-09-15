@@ -2245,6 +2245,10 @@ input:-webkit-autofill:active {
   border: none;
   border-radius: 20px;
 }
+.modal-header {
+  border: none;
+  
+}
 
 #staticBackdrop {
   background-color: rgba(0, 0, 0, 0.5);

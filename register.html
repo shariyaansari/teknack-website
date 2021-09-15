@@ -121,21 +121,20 @@
                         𝐀𝐂𝐌-𝐃𝐁𝐈𝐓 is all set to launch☁️🚀 <br><br>
                         <b>✨ 𝐓𝐄𝐊𝐍𝐀𝐂𝐊 𝟐𝟐✨</b> <br>
                         <br>
-                        TEKNACK is an exciting journey inside the world of video games, where student developers form
-                        a team and make games from scratch using that will be deployed on the Play Store📱!!
+                        At Teknack, publish your own game on Google Play Store while learning to design and develop an
+                        Android Game, with complete training and guidance from our experienced mentors at our student
+                        managed Gaming Studio.📱!!
                         <br>
                         𝐓𝐞𝐚𝐦 𝐒𝐢𝐳𝐞: 2-3 <br>
                         𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: Unity/Unreal Engine <br>
                         𝐄𝐧𝐭𝐫𝐲 𝐅𝐞𝐞 =𝐑𝐒 𝟏𝟎𝟎/ 𝐩𝐞𝐫𝐬𝐨𝐧 <br>
                         <br>
-                        Even if you don't know Unity or Unreal Engine, don't worry. We will be giving complete training
-                        and guidance in order for you to make a complete game.✨ <br>
-                        So grab this amazing opportunity to be a part of this amazing Gaming Studio and develop games
-                        with us. <br>
-                        So what's stopping, click👇🏻to be a part now‼️ <br>
+                        
+                        So what's stopping you? Join us now!! <br>
                         <br>
                         𝐉𝐨𝐢𝐧 𝐭𝐡𝐞 𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐠𝐫𝐨𝐮𝐩 𝐭𝐨 𝐬𝐭𝐚𝐲 𝐮𝐩𝐝𝐚𝐭𝐞𝐝<br>
-                        <a href="https://tinyurl.com/289a8rs7" target="_blank">https://tinyurl.com/289a8rs7</a>
+                        <a href="https://chat.whatsapp.com/BuFSpdp6ITmEqGKl4lJ6Qb"
+                            target="_blank">https://chat.whatsapp.com/BuFSpdp6ITmEqGKl4lJ6Qb</a>
                         <br><br>
                         Note: <br>
                         All members of the team have to fill the form seperately.
@@ -149,15 +148,18 @@
                     <form class="row col-12" name="google-sheet">
                         <div class="col-md-6">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" name="email" class="form-control" id="email" required>
+                            <input type="email" name="email" class="form-control" id="email"
+                                placeholder="Enter Email ID" required>
                         </div>
                         <div class="col-md-6">
                             <label for="mobNumber" class="form-label">Mobile Number (WhatsApp Number)</label>
-                            <input type="text" class="form-control" name="mobNumber" id="mobNumber" required>
+                            <input type="text" class="form-control" name="mobNumber" id="mobNumber"
+                                placeholder="998877665544" required>
                         </div>
                         <div class="col-md-12">
                             <label for="name" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="name" name="name" required>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter Full Name"
+                                required>
                         </div>
                         <script type="text/javascript">
                             function CheckColors(val) {
@@ -308,17 +310,17 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Successfully Registered</h5>
+                    <h4 class="modal-title" style="color: #e1e1e1;padding-left: 10px;">Successfully Registered</h4>
                     <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button> -->
                 </div>
                 <div class="modal-body">
-                    <p>Join the WhatsApp Group for updates! Stay Tuned!</p>
+                    <p class="pl-3">Join the WhatsApp Group for updates! Stay Tuned!</p>
                 </div>
                 <div class="modal-footer">
-                    <a href="https://www.google.com/url?q=https://chat.whatsapp.com/BuFSpdp6ITmEqGKl4lJ6Qb&sa=D&source=editors&ust=1631680779352000&usg=AFQjCNFEE2Lvu7NbK-BxPm21omHpqoEw8w"
-                        target="_blank"><button type="button" class="btn btn-primary">Click to Join</button></a>
+                    <a href="https://chat.whatsapp.com/BuFSpdp6ITmEqGKl4lJ6Qb" target="_blank"><button type="button"
+                            class="btn btn-primary">Click to Join</button></a>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
@@ -415,16 +417,21 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script>
-
+        // $('#form-submit').click(function () {
+        // $(".modal").modal('show')
+        // });
+        // $('form-submit').click()
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxKmCIdq3CL81JHCSkiUptMaDm8Xa4wQH54puogW4Treh1JovPXRO5OM2X6_WcTdnw/exec'
-            const form = document.forms['google-sheet']
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            $('#form-submit').prop('disabled', true);
+            $('#form-submit').html("...");
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => $(".modal").modal('show'))
                 .catch(error => console.error('Error!', error.message))
-            })
+        })
     </script>
 
     <script src="js/jquery.magnific-popup.min.js"></script>
