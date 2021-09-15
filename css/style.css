@@ -1675,6 +1675,7 @@ ol {
   color: #adadad;
 }
 
+
 /*---------------------
   Contact Widget
 -----------------------*/
@@ -1744,7 +1745,7 @@ ol {
   border: 1px solid rgba(225, 225, 225, 0.5);
   background: transparent;
   font-size: 16px;
-  color: #adadad;
+  color: #e1e1e1;
   padding-left: 20px;
   font-weight: 300;
   margin-right: 20px;
@@ -1754,10 +1755,11 @@ ol {
   transition: all, 0.3s;
 }
 .contact__form form input:placeholder {
-  color: #adadad;
+  color: #e1e1e1;
 }
 .contact__form form input:focus {
   border-color: #e1e1e1;
+  background-color: transparent;
 }
 .contact__form form textarea {
   height: 110px;
@@ -1780,6 +1782,34 @@ ol {
 }
 .contact__form form textarea:focus {
   border-color: #e1e1e1;
+}
+select {
+  height: 50px;
+  width: 100%;
+  float: left;
+  border: 1px solid rgba(225, 225, 225, 0.5);
+  background: transparent;
+  font-size: 16px;
+  color: #111;
+  padding-left: 20px;
+  font-weight: 300;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+select {
+  color: #e1e1e1;
+}
+
+option {
+  color: #111;
+}
+.input{
+  color: #e1e1e1;
+}
+
+.form-control:focus {
+  color: #e1e1e1;
 }
 
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
@@ -2168,4 +2198,22 @@ ol {
   .blog__details__quote {
     padding: 30px 40px 35px 35px;
   }
+}
+
+label {
+  color: #e1e1e1;
+}
+
+input:-internal-autofill-selected {
+  background: transparent !important;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+{
+  -webkit-box-shadow: 0 0 0 30px #100028 inset;
+ -webkit-text-fill-color: #e1e1e1 !important;
 }
