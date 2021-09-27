@@ -84,6 +84,26 @@ ul,ol {
 	background: #00bfe7;
 	content: "";
 }
+.section-title h3 {
+	color: #ffffff;
+	font-size: 1.7rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	position: relative;
+	padding-bottom: 17px;
+	text-align: center;
+}
+.section-title h3:after {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	height: 5px;
+	width: 70px;
+	background: #00bfe7;
+	content: "";
+}
 .set-bg {
 	background-repeat: no-repeat;
 	background-size: cover;
