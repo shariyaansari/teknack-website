@@ -1958,3 +1958,25 @@ input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus
 #descTeknack a {
 	color: #4abfd6;
 }
+
+.contributor-card {
+	background-color: rgba(255, 255, 255, 0.1);
+	color: #fff;
+	padding: 0.75em 1.5em;
+	border-radius: 20px;
+	margin: 1em;
+	text-align: center;
+	justify-content: center;
+}
+.contributor-card h4 {
+	font-family: "Play", sans-serif;
+	color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.other-contributors h4 {
+	font-size: 1.2em;
+}
