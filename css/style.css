@@ -1980,3 +1980,13 @@ input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus
 .other-contributors h4 {
 	font-size: 1.2em;
 }
+
+.contributor-card a{
+	color: #adadad;
+}
+
+.contributor-card a:hover{
+	color: #fff;
+	
+}
+
