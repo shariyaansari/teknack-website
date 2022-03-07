@@ -1,4 +1,3 @@
-let leaderBoard = [];
 let games = '';
 
 async function getLeaderBoard(){
@@ -10,7 +9,7 @@ async function getLeaderBoard(){
             },
             body: JSON.stringify({
                 query: `{
-                    leaderBoards {
+                    leaderBoards ( orderBy: rank_ASC ) {
                         downloads
                         gameName
                         id
@@ -21,22 +20,20 @@ async function getLeaderBoard(){
             })
         });
         res = await res.json();
-        res = res.data.leaderBoards
-        console.log(res);
+        res = res.data.leaderBoards;
         res.forEach(element => {
             div = `<div class="row">
-                    <div class="col-2 col-md-2"><span>${element.rank}</span></div>
-                    <div class="col-3 col-md-3 leaderboard-game">
+                    <div class="col-1 col-md-2"><span>${element.rank}</span></div>
+                    <div class="col-5 col-md-3 leaderboard-game">
                         <img src="img/logos-22/${element.gameName}.png">
                         <span>${element.gameName}</span>
                     </div>
-                    <div class="col-2 col-md-2"><span>${element.downloads}</span></div>
+                    <div class="col-4 col-md-2"><span>${element.downloads}</span></div>
                     <div class="col-2 col-md-2"><span>${element.likes}</span></div>
                    </div>`
             games += div
         });
         let leadTitle = document.getElementsByClassName('leaderboard-title')[0]
-        
         leadTitle.insertAdjacentHTML('afterend', games)
     } catch (error) {
         console.log(error);
@@ -44,14 +41,3 @@ async function getLeaderBoard(){
 }
 
 getLeaderBoard()
-// console.log(leaderBoard);
-// let leadTitle = document.getElementsByClassName('leaderboard-title')[0]
-// let leadTitle = `<div class="row leaderboard-title">
-//                     <div class="col-2"><h3>Rank</h3></div>
-//                     <div class="col-3"><h3>Game</h3></div>
-//                     <div class="col-2"><h3>Downloads</h3></div>
-//                     <div class="col-2"><h3>Likes</h3></div>
-//                 </div>`
-// console.log(leadTitle)
-// console.log(leaderBoard);
-// leadTitle.insertAdjacentElement('afterend',leaderBoard[0])

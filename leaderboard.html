@@ -111,10 +111,10 @@
     <section class="about spad">
             <div class="container leaderboard">
                 <div class="row leaderboard-title">
-                    <div class="col-2"><h3>Rank</h3></div>
-                    <div class="col-3"><h3>Game</h3></div>
-                    <div class="col-2"><h3>Downloads</h3></div>
-                    <div class="col-2"><h3>Likes</h3></div>
+                    <div class="col-2 col-md-2"><h3>Rank</h3></div>
+                    <div class="col-4 col-md-3"><h3>Game</h3></div>
+                    <div class="col-4 col-md-2"><h3>Downloads</h3></div>
+                    <div class="col-2 col-md-2"><h3>Likes</h3></div>
                 </div>
                 <!-- <div class="row">
                     <div class="col-2 col-md-2"><span>1</span></div>
@@ -166,6 +166,14 @@
             color: white;
             font-size: 20px;
         }
+        @media screen and (max-width: 480px) {
+            .leaderboard > .row {
+                font-size: 15px;
+            }
+            .leaderboard-title h3{
+                font-size: 20px;
+            }
+        }
         .leaderboard > .row > *{
             padding-top: 20px;
             padding-bottom: 20px;
@@ -199,11 +207,11 @@
             content: "";
             display: block;
             position: relative;
-            left: 0;
+            left: 10%;
             bottom: 0;
             margin-top: 3px;
             height: 3px;
-            width: 100%;
+            width: 80%;
             background-color: #00BFE7;
         }
         .leaderboard > .row > div{
