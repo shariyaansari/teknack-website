@@ -61,7 +61,7 @@
                         <nav class="header__nav__menu mobile-menu">
                             <ul>
                                 <li><a href="index.html">Home</a></li>
-                                <li class="active"><a href="about.html">About</a></li>
+                                <li><a href="about.html">About</a></li>
                                 <li><a href="games.html">Games</a>
                                     <ul class="dropdown">
                                         <li><a href="teknack-2022.html">Teknack 2022</a></li>
@@ -70,6 +70,7 @@
                                         <li><a href="teknack-2019.html">Teknack 2019</a></li>
                                     </ul>
                                 </li>
+                                <li class="active"><a href="leaderboard.html">2022 LeaderBoard</a></li>
                                 <li><a href="hall-of-fame.html">Hall of Fame</a>
                                 <li><a href="gallery.html">Gallery</a></li>
                                 <li><a href="contact.html">Contact</a></li>
@@ -107,8 +108,8 @@
     </div>
     <!-- Breadcrumb End -->
 
-    <!-- About Section Begin -->
-    <section class="about spad">
+    <!-- Leader Board Section Begin -->
+    <section class="lead spad">
             <div class="container leaderboard">
                 <div class="row leaderboard-title">
                     <div class="col-2 col-md-2"><h3>Rank</h3></div>
@@ -116,117 +117,9 @@
                     <div class="col-4 col-md-2"><h3>Downloads</h3></div>
                     <div class="col-2 col-md-2"><h3>Likes</h3></div>
                 </div>
-                <!-- <div class="row">
-                    <div class="col-2 col-md-2"><span>1</span></div>
-                    <div class="col-3 col-md-3 leaderboard-game">
-                        <img src="img/logos-22/SkyGliders.png">
-                        <span>SkyGliders</span>
-                    </div>
-                    <div class="col-2 col-md-2"><span>100</span></div>
-                    <div class="col-2 col-md-2"><span>50</span></div>
-                </div>
-                <div class="row">
-                    <div class="col-2 col-md-2"><span>2</span></div>
-                    <div class="col-3 col-md-3 leaderboard-game">
-                        <img src="img/logos-22/Jards.png">
-                        <span>Jards</span>
-                    </div>
-                    <div class="col-2 col-md-2"><span>100</span></div>
-                    <div class="col-2 col-md-2"><span>50</span></div>
-                </div>
-                <div class="row">
-                    <div class="col-2 col-md-2"><span>3</span></div>
-                    <div class="col-3 col-md-3 leaderboard-game">
-                        <img src="img/logos-22/RescueBud.png">
-                        <span>RescueBud</span>
-                    </div>
-                    <div class="col-2 col-md-2"><span>100</span></div>
-                    <div class="col-2 col-md-2"><span>50</span></div>
-                </div>
-                <div class="row">
-                    <div class="col-2 col-md-2"><span>4</span></div>
-                    <div class="col-3 col-md-3 leaderboard-game">
-                        <img src="img/logos-22/Astrompy.png">
-                        <span>Astrompy</span>
-                    </div>
-                    <div class="col-2 col-md-2"><span>100</span></div>
-                    <div class="col-2 col-md-2"><span>50</span></div>
-                </div> -->
             </div>
         </div>
     </section>
-
-    <style>
-        .about {
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/leaderboard-bg.jpg'); 
-            background-size: cover;
-        }
-        .leaderboard > .row{
-            justify-content: center;
-            color: white;
-            font-size: 20px;
-        }
-        @media screen and (max-width: 480px) {
-            .leaderboard > .row {
-                font-size: 15px;
-            }
-            .leaderboard-title h3{
-                font-size: 20px;
-            }
-        }
-        .leaderboard > .row > *{
-            padding-top: 20px;
-            padding-bottom: 20px;
-            background-color: rgba(0,0,0,0.4);
-        }
-        .leaderboard .row:first-child > div{
-            padding-top: 30px !important;
-        }
-        .leaderboard .row:last-child > div{
-            padding-bottom: 30px !important;
-        }
-        .leaderboard .row:first-child > div:first-child{
-            border-radius: 15px 0 0 0;
-        }
-        .leaderboard .row:first-child > div:last-child{
-            border-radius: 0 15px 0 0;
-        }
-        .leaderboard .row:last-child > div:first-child{
-            border-radius: 0 0 0 15px;
-        }
-        .leaderboard .row:last-child > div:last-child{
-            border-radius: 0 0 15px 0;
-        }
-        .leaderboard-title{
-            text-align: center;
-        }
-        .leaderboard-title h3{
-            color: white;
-        }
-        .leaderboard-title h3::after{
-            content: "";
-            display: block;
-            position: relative;
-            left: 10%;
-            bottom: 0;
-            margin-top: 3px;
-            height: 3px;
-            width: 80%;
-            background-color: #00BFE7;
-        }
-        .leaderboard > .row > div{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .leaderboard-game{
-            justify-content: start !important;
-        }
-        .leaderboard-game img{
-            width: 40px;
-            margin-right: 25px;
-        }
-    </style>
 
     <!-- Footer Section Begin -->
     <footer class="footer">
