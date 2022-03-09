@@ -1990,3 +1990,73 @@ input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus
 	
 }
 
+/* LeaderBoard */
+.lead {
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/leaderboard-bg.jpg'); 
+	background-size: cover;
+}
+.leaderboard > .row{
+	justify-content: center;
+	color: white;
+	font-size: 20px;
+}
+@media screen and (max-width: 480px) {
+	.leaderboard > .row {
+		font-size: 15px;
+	}
+	.leaderboard-title h3{
+		font-size: 20px;
+	}
+}
+.leaderboard > .row > *{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: rgba(0,0,0,0.4);
+}
+.leaderboard .row:first-child > div{
+	padding-top: 30px !important;
+}
+.leaderboard .row:last-child > div{
+	padding-bottom: 30px !important;
+}
+.leaderboard .row:first-child > div:first-child{
+	border-radius: 15px 0 0 0;
+}
+.leaderboard .row:first-child > div:last-child{
+	border-radius: 0 15px 0 0;
+}
+.leaderboard .row:last-child > div:first-child{
+	border-radius: 0 0 0 15px;
+}
+.leaderboard .row:last-child > div:last-child{
+	border-radius: 0 0 15px 0;
+}
+.leaderboard-title{
+	text-align: center;
+}
+.leaderboard-title h3{
+	color: white;
+}
+.leaderboard-title h3::after{
+	content: "";
+	display: block;
+	position: relative;
+	left: 10%;
+	bottom: 0;
+	margin-top: 3px;
+	height: 3px;
+	width: 80%;
+	background-color: #00BFE7;
+}
+.leaderboard > .row > div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.leaderboard-game{
+	justify-content: start !important;
+}
+.leaderboard-game img{
+	width: 40px;
+	margin-right: 25px;
+}
