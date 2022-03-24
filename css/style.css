@@ -1992,7 +1992,7 @@ input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus
 
 /* LeaderBoard */
 .lead {
-	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/leaderboard-bg.jpg'); 
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/leaderboard-bg.webp'); 
 	background-size: cover;
 }
 .leaderboard > .row{
