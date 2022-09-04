@@ -267,7 +267,7 @@
                             </select>
                         </div>
 
-                        <div class="col-md-12">
+                        <!-- <div class="col-md-12">
                             <label for="platform" class="form-label">Which platform would you prefer to develop your
                                 game on?</label>
                             <select class="form-select" name="platform" id="platform" required>
@@ -277,7 +277,7 @@
                                 <option value="Unreal">Unreal Engine ( Desktop Games - For Intermediate developers)
                                 </option>
                             </select>
-                        </div>
+                        </div> -->
 
                         <div class="col-md-12">
                             <label for="prevTeknack" class="form-label">Have you been part of Teknack Earlier?</label>
@@ -342,13 +342,15 @@
                         <div class="row">
                             <div class="col-5">
                                 <div class="footer__top__logo">
-                                    <a href="https://dbit.acm.org/teknack"><img src="img/tk-logo-white.png" alt="Teknack Logo" class="my-auto"></a>
+                                    <a href="https://dbit.acm.org/teknack"><img src="img/tk-logo-white.png"
+                                            alt="Teknack Logo" class="my-auto"></a>
                                 </div>
                             </div>
                             <div class="col-7 row">
                                 <div class="col-9">
                                     <div class="footer__top__logo">
-                                        <a href="https://dbit.acm.org"><img src="img/2.png" alt="ACM DBIT" class="my-auto"></a>
+                                        <a href="https://dbit.acm.org"><img src="img/2.png" alt="ACM DBIT"
+                                                class="my-auto"></a>
                                     </div>
                                 </div>
                                 <div class="col-3">
@@ -443,16 +445,20 @@
 
     <script>
         // $('#form-submit').click(function () {
-        // $(".modal").modal('show')
+        //     $(".modal").modal('show')
         // });
         // $('form-submit').click()
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxKmCIdq3CL81JHCSkiUptMaDm8Xa4wQH54puogW4Treh1JovPXRO5OM2X6_WcTdnw/exec'
+
+        //sd8capricon's
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxgzJXPuRuIe3UZ100DJutszifw4KUSCMRu7C7VnCH5Q8H-kShPfTK6atB9v3ruHoOF7g/exec'
+
         const form = document.forms['google-sheet']
 
         form.addEventListener('submit', e => {
             e.preventDefault()
             $('#form-submit').prop('disabled', true);
             $('#form-submit').html("...");
+
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => $(".modal").modal('show'))
                 .catch(error => console.error('Error!', error.message))
