@@ -444,11 +444,11 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script>
-        $('#form-submit').click(function () {
-            $(".modal").modal('show')
-        });
+        // $('#form-submit').click(function () {
+        //     $(".modal").modal('show')
+        // });
         // $('form-submit').click()
-        // const scriptURL = 'https://script.google.com/macros/s/AKfycbxKmCIdq3CL81JHCSkiUptMaDm8Xa4wQH54puogW4Treh1JovPXRO5OM2X6_WcTdnw/exec'
+
         //sd8capricon's
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxgzJXPuRuIe3UZ100DJutszifw4KUSCMRu7C7VnCH5Q8H-kShPfTK6atB9v3ruHoOF7g/exec'
 
@@ -456,15 +456,11 @@
 
         form.addEventListener('submit', e => {
             e.preventDefault()
-            // $('#form-submit').prop('disabled', true);
-            // $('#form-submit').html("...");
-            let data = new FormData(form);
-            for (var pair of data.entries()) {
-                console.log(pair[0] + ', ' + pair[1]);
-            }
+            $('#form-submit').prop('disabled', true);
+            $('#form-submit').html("...");
+
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                // .then(response => $(".modal").modal('show'))
-                .then((res) => res.json()).then(res => console.log(res))
+                .then(response => $(".modal").modal('show'))
                 .catch(error => console.error('Error!', error.message))
         })
     </script>
