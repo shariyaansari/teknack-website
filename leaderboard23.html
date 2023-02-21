@@ -112,6 +112,7 @@
     <!-- Leader Board Section Begin -->
     <section class="lead spad leaderboard-bg">
         <div id="leaderboard-23" class="container leaderboard">
+            <!-- reference code snippet -->
             <!-- <div class="row leaderboard-title">
                 <div class="col-2 col-md-2">
                     <h3>Rank</h3>
@@ -128,10 +129,48 @@
             </div> -->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script>
+
+                var api_acess_token = "ya29.a0AVvZVspoBUYW9cMgKOon95w95TkvHrxFzEZHVV8u_0frjyS_AF3mrypBdHrociPt1ihZGGBcet1YoYjQ2OfrM1lMY_fMc3RtcjktZfb0zUPn0Nxy-KvBRE4Tr1ir8jJAfBuvbCOdtMs3TGjttu1Wlmjr_sbKaCgYKAbkSARASFQGbdwaI_CwM0pzl5VSXYahd-YcRoQ0163";
+
+                // refreshing access token
+                function refreshToken() {
+                    var refreshToken = '1//04UGgvLoWP2SMCgYIARAAGAQSNwF-L9Ir58Jwn-GejTKrHTjSnfnGB6HYbkmRHp_jp4yc7hNAO3EqCCBYX_781DboC_plCNn2nF8';
+                    var clientId = '19064026875-vfjemrs31ejdigk7ji0o9c3ui7qcfbjv.apps.googleusercontent.com';
+                    var clientSecret = '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';
+                    var url = 'https://oauth2.googleapis.com/token';
+
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('POST', url);
+                    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState === XMLHttpRequest.DONE) {
+                            if (xhr.status === 200) {
+                                var response = JSON.parse(xhr.responseText);
+                                var accessToken = response.access_token;
+                                var expiresIn = response.expires_in;
+                                // Store the new access token and expiration time
+                                // in your application's session or database
+                                api_acess_token = accessToken;
+                                console.log('New access token:', accessToken);
+                                console.log('New expiration time:', expiresIn);
+                            } else {
+                                console.error('Refresh token request failed:', xhr.status);
+                            }
+                        }
+                    };
+
+                    xhr.send('grant_type=refresh_token&refresh_token=' + refreshToken + '&client_id=' + clientId + '&client_secret=' + clientSecret);
+                }
+
+                refreshToken();
+
+                // 
+
                 $(document).ready(function () {
                     // Google Sheets API endpoint
                     var spreadsheetId = '1qMnd6rg1xnboHYh4-OKbw5d8BN8iux6OkzGqDbIXKLo';
-                    var range = 'Sheet1!G2:J13'; // range of cells to retrieve
+                    var range = 'Sheet1!G2:K12'; // range of cells to retrieve
 
                     var url = 'https://sheets.googleapis.com/v4/spreadsheets/' + spreadsheetId + '/values/' + range;
 
@@ -141,7 +180,7 @@
                         type: 'GET',
                         dataType: 'json',
                         headers: {
-                            'Authorization': 'Bearer ya29.a0AVvZVso8sDK4i4Ykge7alXSOUT2i2L61TosyvKunNU-3e3iCU8tF1SycQWIgdTovWUAiLR5YhrMP3PcKKtq4Gs4np9-fO1JQrsAZGNlj9qDvkPgp7kBCy_FI9gBjxVDZF2vJfitY-pmGh4gdC7fry6zaw7GUrO2-aCgYKAUgSAQASFQGbdwaIQVZN8Pqymzc87ocK1aLJIg0167' // Replace with your access token
+                            'Authorization': `Bearer ${api_acess_token}` // Replace with your access token
                         },
                         success: function (data) {
                             var rows = data.values;
@@ -163,6 +202,7 @@
             </div>
             `;
 
+                            // last year reference code snippet
                             // `<div class="row">
                             //         <div class="col-1 col-md-2"><span>${element.rank}</span></div>
                             //         <div class="col-5 col-md-3 leaderboard-game">
@@ -175,12 +215,18 @@
 
                             for (var i = 0; i < rows.length; i++) {
                                 var cells = rows[i];
-                                code += '<div class="row row-cols-4">';
+                                code += '<div class="row">';
 
-                                for (var j = 0; j < cells.length; j++) {
-                                    code += '<div class="col"><span>' + cells[j] + '</span></div>';
-
-                                }
+                                var j = 0;
+                                code += `
+                                    <div class="col-1 col-md-2"><span>${cells[j++]}</span></div>
+                                    <div class="col-5 col-md-3 leaderboard-game">
+                                        <img src="${cells[j++]}">
+                                        <span>${cells[j++]}</span>
+                                    </div>
+                                    <div class="col-4 col-md-2"><span>${cells[j++]}</span></div>
+                                    <div class="col-2 col-md-2"><span>${cells[j++]}</span></div>
+                                `;
 
                                 code += '</div>';
                             }
