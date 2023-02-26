@@ -2079,7 +2079,7 @@ input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus
   }
   
   /* Teknack Poster content */
-  .poster-modal-content {
+  /* .poster-modal-content {
 	background-color: #fefefe;
 	margin: auto;
 	padding: 20px;
@@ -2091,7 +2091,7 @@ input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus
   }
   
   /* The close button */
-  .poster-close {
+  /* .poster-close {
 	color: #aaaaaa;
 	float: right;
 	font-size: 28px;
@@ -2103,6 +2103,5 @@ input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus
 	color: #000;
 	text-decoration: none;
 	cursor: pointer;
-  }
-  
+  } */
   
