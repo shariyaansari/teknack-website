@@ -34,7 +34,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LG3JX454M"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-4LG3JX454M');
@@ -78,7 +81,7 @@
                             </ul>
                         </nav>
                         <div class="header__nav__social">
-                            <a href="https://www.instagram.com/acmdbitt/"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/acmdbit/"><i class="fa fa-instagram"></i></a>
                             <a href="https://www.linkedin.com/company/acm-dbit"><i class="fa fa-linkedin"></i></a>
                             <a href="https://www.facebook.com/ACMDBIT/"><i class="fa fa-facebook"></i></a>
                             <a href="https://twitter.com/acmdbit"><i class="fa fa-twitter"></i></a>
@@ -129,12 +132,13 @@
             </div> -->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script>
-
-                var api_acess_token = "ya29.a0AVvZVspoBUYW9cMgKOon95w95TkvHrxFzEZHVV8u_0frjyS_AF3mrypBdHrociPt1ihZGGBcet1YoYjQ2OfrM1lMY_fMc3RtcjktZfb0zUPn0Nxy-KvBRE4Tr1ir8jJAfBuvbCOdtMs3TGjttu1Wlmjr_sbKaCgYKAbkSARASFQGbdwaI_CwM0pzl5VSXYahd-YcRoQ0163";
+                var api_acess_token =
+                    "ya29.a0AVvZVspoBUYW9cMgKOon95w95TkvHrxFzEZHVV8u_0frjyS_AF3mrypBdHrociPt1ihZGGBcet1YoYjQ2OfrM1lMY_fMc3RtcjktZfb0zUPn0Nxy-KvBRE4Tr1ir8jJAfBuvbCOdtMs3TGjttu1Wlmjr_sbKaCgYKAbkSARASFQGbdwaI_CwM0pzl5VSXYahd-YcRoQ0163";
 
                 // refreshing access token
                 function refreshToken() {
-                    var refreshToken = '1//04UGgvLoWP2SMCgYIARAAGAQSNwF-L9Ir58Jwn-GejTKrHTjSnfnGB6HYbkmRHp_jp4yc7hNAO3EqCCBYX_781DboC_plCNn2nF8';
+                    var refreshToken =
+                        '1//04UGgvLoWP2SMCgYIARAAGAQSNwF-L9Ir58Jwn-GejTKrHTjSnfnGB6HYbkmRHp_jp4yc7hNAO3EqCCBYX_781DboC_plCNn2nF8';
                     var clientId = '19064026875-vfjemrs31ejdigk7ji0o9c3ui7qcfbjv.apps.googleusercontent.com';
                     var clientSecret = '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';
                     var url = 'https://oauth2.googleapis.com/token';
@@ -158,7 +162,8 @@
                         }
                     };
 
-                    xhr.send('grant_type=refresh_token&refresh_token=' + refreshToken + '&client_id=' + clientId + '&client_secret=' + clientSecret);
+                    xhr.send('grant_type=refresh_token&refresh_token=' + refreshToken + '&client_id=' + clientId +
+                        '&client_secret=' + clientSecret);
                 }
 
                 refreshToken();
@@ -170,7 +175,8 @@
                     var spreadsheetId = '1qMnd6rg1xnboHYh4-OKbw5d8BN8iux6OkzGqDbIXKLo';
                     var range = 'Sheet1!G2:K12'; // range of cells to retrieve
 
-                    var url = 'https://sheets.googleapis.com/v4/spreadsheets/' + spreadsheetId + '/values/' + range;
+                    var url = 'https://sheets.googleapis.com/v4/spreadsheets/' + spreadsheetId + '/values/' +
+                        range;
 
                     // Make AJAX request to Google Sheets API
                     $.ajax({
@@ -275,7 +281,7 @@
 
                     <div class="col-lg-6 col-md-6">
                         <div class="footer__top__social">
-                            <a href="https://www.instagram.com/acmdbitt/"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/acmdbit/"><i class="fa fa-instagram"></i></a>
                             <a href="https://www.linkedin.com/company/acm-dbit"><i class="fa fa-linkedin"></i></a>
                             <a href="https://www.facebook.com/ACMDBIT/"><i class="fa fa-facebook"></i></a>
                             <a href="https://twitter.com/acmdbit"><i class="fa fa-twitter"></i></a>
@@ -302,6 +308,7 @@
                                 <li><a href="teknack-2020.html">Teknack 2020</a></li>
                                 <li><a href="teknack-2021.html">Teknack 2021</a></li>
                                 <li><a href="teknack-2022.html">Teknack 2022</a></li>
+                                <li><a href="teknack-2023.html">Teknack 2023</a></li>
                             </ul>
                         </div>
                     </div>
