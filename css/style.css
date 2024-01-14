@@ -409,7 +409,7 @@ ul,ol {
 }
 .hero__item {
 	height: 684px;
-	padding-top: 255px;
+	padding-top: 90px;
 }
 .hero__text span {
 	color: #ffffff;
@@ -1601,6 +1601,10 @@ option {
 	.container {
 		max-width: 1170px;
 	}
+	.count {
+		left: 250px;
+	}
+
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	.header__nav__menu {
@@ -1626,6 +1630,9 @@ option {
 	}
 	.hero__slider.owl-carousel .owl-dots {
 		max-width: 930px !important;
+	}
+	.count {
+		left: 200px;
 	}
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
