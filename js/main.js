@@ -55,6 +55,42 @@
     });
 
     /*------------------
+        Countdown
+    --------------------*/
+    // Set the event date and time (in UTC) for February 22, 2024
+    const eventDate = new Date('2024-02-22T00:00:00Z').getTime();
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const timeDifference = eventDate - now;
+
+        if (timeDifference > 0) {
+            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+            document.getElementById('days').innerHTML = days;
+            document.getElementById('hours').innerHTML = padZero(hours);
+            document.getElementById('minutes').innerHTML = padZero(minutes);
+            document.getElementById('seconds').innerHTML = padZero(seconds);
+        } else {
+            document.getElementById('countdown').innerHTML = "Event Ended";
+        }
+    }
+
+    function padZero(number) {
+        return (number < 10) ? `0${number}` : number;
+    }
+
+    
+    document.addEventListener('DOMContentLoaded', function () {
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+    });
+
+
+    /*------------------
         Hero Slider
     --------------------*/
     $('.hero__slider').owlCarousel({
