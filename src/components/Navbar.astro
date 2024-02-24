@@ -1,5 +1,11 @@
 ---
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1);
+let gamesPath = false;
 
+if (["teknack-2024","teknack-2023","teknack-2022","teknack-2021","teknack-2020","teknack-2019", "games"].includes(currentPath)) {
+    gamesPath = true;
+}
 ---
 
 <header class="header">
@@ -14,9 +20,9 @@
                 <div class="header__nav__option">
                     <nav class="header__nav__menu mobile-menu">
                         <ul>
-                            <li class="active"><a href="/">Home</a></li>
-                            <li><a href="/about">About</a></li>
-                            <li><a href="/games">Games</a>
+                            <li class={currentPath === "" ? "active" : ""}><a href="/">Home</a></li>
+                            <li class={currentPath === "about" ? "active" : ""}><a href="/about">About</a></li>
+                            <li class={gamesPath ? "active" : ""}><a href="/games">Games</a>
                                 <ul class="dropdown">
                                     <li><a href="/teknack-2024">Teknack 2024</a></li>
                                     <li><a href="/teknack-2023">Teknack 2023</a></li>
@@ -26,10 +32,10 @@
                                     <li><a href="/teknack-2019">Teknack 2019</a></li>
                                 </ul>
                             </li>
-                            <!-- <li><a href="leaderboard">2022 LeaderBoard</a></li> -->
-                            <li><a href="/hall-of-fame">Hall of Fame</a>
-                            <li><a href="/gallery">Gallery</a></li>
-                            <li><a href="/contact">Contact</a></li>
+                            <!-- <li class={currentPath === "" ? "active" : ""}><a href="leaderboard">2022 LeaderBoard</a></li> -->
+                            <li class={currentPath === "hall-of-fame" ? "active" : ""}><a href="/hall-of-fame">Hall of Fame</a>
+                            <li class={currentPath === "gallery" ? "active" : ""}><a href="/gallery">Gallery</a></li>
+                            <li class={currentPath === "contact" ? "active" : ""}><a href="/contact">Contact</a></li>
                         </ul>
                     </nav>
                     <div class="header__nav__social">
