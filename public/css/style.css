@@ -2115,3 +2115,6 @@ input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus
   .dark-bg {
 	background: #0a0119;
   }
+  .semi-dark-bg {
+	background: #100028;
+  }

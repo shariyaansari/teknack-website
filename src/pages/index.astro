@@ -1,166 +1,143 @@
 ---
-import Navbar from "../components/Navbar.astro"
-import Preloader from "../components/Preloader.astro"
-import HeroSection from "../components/HeroSection.astro"
-import AwardsGrid from "../components/AwardsGrid.astro"
-import CtaWithoutImage from "../components/CtaWithoutImage.astro"
-import Counter from "../components/Counter.astro"
-import Footer from "../components/Footer.astro"
+import Header from "../components/Header.astro";
+import Navbar from "../components/Navbar.astro";
+import Preloader from "../components/Preloader.astro";
+import HeroSection from "../components/HeroSection.astro";
+import AwardsGrid from "../components/AwardsGrid.astro";
+import CtaWithoutImage from "../components/CtaWithoutImage.astro";
+import Counter from "../components/Counter.astro";
+import Footer from "../components/Footer.astro";
+import awardsData from "/js/awardsData.js?url";
 
 let counterData = [
-    {
-        text: "Released Games",
-        num: "94",
-        icon: "img/icons/ci-1.png",
-    },
-    {
-        text: "Downloads",
-        num: "17123",
-        icon: "img/icons/ci-2.png",
-    },
-    {
-        text: "Developers",
-        num: "200",
-        icon: "img/icons/ci-3.png",
-    },
-    {
-        text: "Years",
-        num: "6",
-        icon: "img/icons/ci-4.png",
-    },
+  {
+    text: "Released Games",
+    num: "94",
+    icon: "img/icons/ci-1.png",
+  },
+  {
+    text: "Downloads",
+    num: "17123",
+    icon: "img/icons/ci-2.png",
+  },
+  {
+    text: "Developers",
+    num: "200",
+    icon: "img/icons/ci-3.png",
+  },
+  {
+    text: "Years",
+    num: "6",
+    icon: "img/icons/ci-4.png",
+  },
 ];
+const title = "Home";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <Header title={title} />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Teknack is a Gaming Studio run by ACM-DBIT Student Chapter. Teknack is one of the amazing battlefields provided by ACM for students of not just DBIT but
-    also of other colleges to boost up their creative skills and pump up their technical skills.">
-    <meta name="keywords" content="teknack, gaming, studio, dbit, acm, mumbai, technak, tecknak, technack, tecknack">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta property="og:image" content="https://dbit.acm.org/teknack/img/favicon/android-chrome-512x512.png">
-    <meta property="og:description" content="Teknack is a Gaming Studio run by ACM-DBIT Student Chapter. Teknack is one of the amazing battlefields provided by ACM for students of not just DBIT but
-        also of other colleges to boost up their creative skills and pump up their technical skills.">
-    <meta property="og:title" content="Teknack Gaming Studio - Official Website">
-
-
-    <title>Teknack Gaming Studio | ACM-DBIT</title>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/img/favicon/site.webmanifest">
-
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="/css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="/css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="/css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="/css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LG3JX454M"></script>
-    <script is:inline>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-4LG3JX454M');
-    </script>
-</head>
-
-<body>
+  <body>
     <Preloader />
     <Navbar />
     <HeroSection />
-    <AwardsGrid />
+    <AwardsGrid title="Teknack 2024 Winners" awardsData={awardsData["2024"]} />
 
     <!-- Services Section Begin -->
     <section class="services spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="services__title">
-                        <div class="section-title">
-                            <span>Know about us</span>
-                            <h2>What We do?</h2>
-                        </div>
-                        <p>Teknack is one of the amazing battlefields provided by ACM for students of not just DBIT but
-                            also of other colleges to boost up their creative skills and pump up their technical skills
-                            by amalgamating with newer ideas and facts to build up Games that give the players an
-                            experience that would last with them forever</p>
-                        <a href="games.html" class="primary-btn">View our Games</a>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="services__item">
-                                <div class="services__item__icon">
-                                    <img src="img/icons/si-1.png" alt="Icon">
-                                </div>
-                                <h4>Training and Guidance</h4>
-                                <p>We teach and train the students to develop mobile games using the Unity Engine. We
-                                    guide them throughout the journey from ideation to release of the game.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="services__item">
-                                <div class="services__item__icon">
-                                    <img src="img/icons/si-2.png" alt="Icon">
-                                </div>
-                                <h4>Unity Development</h4>
-                                <p>The games are developed using the Unity Engine. Developers get hands-on experience on
-                                    the platform through their journey of development.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="services__item">
-                                <div class="services__item__icon">
-                                    <img src="img/icons/si-3.png" alt="Icon">
-                                </div>
-                                <h4>Gaming Events and Fest</h4>
-                                <p>We also host an annual fest named "Teknack" every year and during this fest, the
-                                    games are published on Google Play Store and various awards are declared for the
-                                    developers. Also we keep gaming events as part of the fest to inculcate a gaming
-                                    culture.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="services__item">
-                                <div class="services__item__icon">
-                                    <img src="img/icons/si-4.png" alt="Icon">
-                                </div>
-                                <h4>Publishing Games on Play Store</h4>
-                                <p>The games developed by the students are published on Google Play Store under the
-                                    banner of Teknack. This provides them a platform to showcase their talents and bring
-                                    out to the world, their creativity and technical skills.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="services__title">
+              <div class="section-title">
+                <span>Know about us</span>
+                <h2>What We do?</h2>
+              </div>
+              <p>
+                Teknack is one of the amazing battlefields provided by ACM for
+                students of not just DBIT but also of other colleges to boost up
+                their creative skills and pump up their technical skills by
+                amalgamating with newer ideas and facts to build up Games that
+                give the players an experience that would last with them forever
+              </p>
+              <a href="games.html" class="primary-btn">View our Games</a>
             </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="services__item">
+                  <div class="services__item__icon">
+                    <img src="img/icons/si-1.png" alt="Icon" />
+                  </div>
+                  <h4>Training and Guidance</h4>
+                  <p>
+                    We teach and train the students to develop mobile games
+                    using the Unity Engine. We guide them throughout the journey
+                    from ideation to release of the game.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="services__item">
+                  <div class="services__item__icon">
+                    <img src="img/icons/si-2.png" alt="Icon" />
+                  </div>
+                  <h4>Unity Development</h4>
+                  <p>
+                    The games are developed using the Unity Engine. Developers
+                    get hands-on experience on the platform through their
+                    journey of development.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="services__item">
+                  <div class="services__item__icon">
+                    <img src="img/icons/si-3.png" alt="Icon" />
+                  </div>
+                  <h4>Gaming Events and Fest</h4>
+                  <p>
+                    We also host an annual fest named "Teknack" every year and
+                    during this fest, the games are published on Google Play
+                    Store and various awards are declared for the developers.
+                    Also we keep gaming events as part of the fest to inculcate
+                    a gaming culture.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="services__item">
+                  <div class="services__item__icon">
+                    <img src="img/icons/si-4.png" alt="Icon" />
+                  </div>
+                  <h4>Publishing Games on Play Store</h4>
+                  <p>
+                    The games developed by the students are published on Google
+                    Play Store under the banner of Teknack. This provides them a
+                    platform to showcase their talents and bring out to the
+                    world, their creativity and technical skills.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Services Section End -->
- 
-    <CtaWithoutImage title="Wide range of games developed by our aspiring Game Developers." btnText="Our Games" btnLink="games.html" />
-    <Counter counterData={counterData} updatedDate="23rd February, 2024"/>
+
+    <CtaWithoutImage
+      title="Wide range of games developed by our aspiring Game Developers."
+      btnText="Our Games"
+      btnLink="games.html"
+    />
+    <Counter counterData={counterData} updatedDate="23rd February, 2024" />
     <Footer />
-    
+
     <!-- Js Plugins -->
     <script src="/js/jquery-3.3.1.min.js" is:inline></script>
     <script src="/js/bootstrap.min.js" is:inline></script>
@@ -170,6 +147,5 @@ let counterData = [
     <script src="/js/jquery.slicknav.js" is:inline></script>
     <script src="/js/owl.carousel.min.js" is:inline></script>
     <script src="/js/main.js" is:inline></script>
-</body>
-
+  </body>
 </html>

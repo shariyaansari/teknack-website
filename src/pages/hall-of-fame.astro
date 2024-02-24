@@ -4,6 +4,8 @@ import Preloader from "../components/Preloader.astro";
 import Navbar from "../components/Navbar.astro";
 import InnerPageHero from "../components/InnerPageHero.astro";
 import Footer from "../components/Footer.astro";
+import AwardsGrid from "../components/AwardsGrid.astro";
+import awardsData from "/js/awardsData.js?url";
 
 const title = "Hall of Fame";
 ---
@@ -19,159 +21,10 @@ const title = "Hall of Fame";
     <Navbar />
     <InnerPageHero title={title} />
     <!-- 2024 Winners -->
-    <section class="services spad">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xs-12 justify-content-center">
-            <div class="services__title" style="text-align: center;">
-              <div class="section-title">
-                <span style="font-size: 40px;font-weight: 700;"
-                  >Teknack 2024</span
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-lg-12">
-            <div class="row">
-              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
-                <div class="portfolio__item justify-content-center">
-                  <div class="services__title">
-                    <div class="section-title">
-                      <h3>Best Game UI</h3>
-                    </div>
-                  </div>
-                  <div
-                    style="display: flex;justify-content: center;align-items: center;"
-                  >
-                    <a
-                      href="https://play.google.com/store/apps/details?id=com.teknack.rina"
-                      target="_blank"
-                      style="text-align: center;"
-                    >
-                      <img
-                        src="img/logos-24/rina.webp"
-                        style="width: 40%;margin:auto;margin-bottom: 20px;"
-                        alt="Rina"
-                      />
-                    </a>
-                  </div>
-                  <div class="portfolio__item__text">
-                    <a
-                      href="https://play.google.com/store/apps/details?id=com.teknack.rina"
-                      target="_blank"
-                    >
-                      <h4>Rina : The Lost Soul</h4>
-                    </a>
-                    <span
-                      >Arkaprabha Ghosh, Nathan Pimenta, Shaun Rodrigues</span
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
-                <div class="portfolio__item justify-content-center">
-                  <div class="services__title">
-                    <div class="section-title">
-                      <h3>Best GamePlay</h3>
-                    </div>
-                  </div>
-                  <div style="display: flex;justify-content: center;">
-                    <a
-                      href="https://play.google.com/store/apps/details?id=com.teknack.starfall"
-                      target="_blank"
-                      style="text-align: center;"
-                    >
-                      <img
-                        src="img/logos-24/StarfallOdyssey.webp"
-                        alt="Starfall Odyssey"
-                        style="width: 40%;margin-bottom: 20px;"
-                      />
-                    </a>
-                  </div>
-                  <div class="portfolio__item__text">
-                    <a
-                      href="https://play.google.com/store/apps/details?id=com.teknack.starfall"
-                      target="_blank"
-                    >
-                      <h4>Starfall : Odyssey</h4>
-                    </a>
-                    <span>Nishith Lopes, Raghav Ghoil, Sahil Khude</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
-                <div class="portfolio__item justify-content-center">
-                  <div class="services__title">
-                    <div class="section-title">
-                      <h3>Best Game Concept</h3>
-                    </div>
-                  </div>
-                  <div style="display: flex;justify-content: center;">
-                    <a
-                      href="https://play.google.com/store/apps/details?id=com.com.Teknack.CircleSmash.CircleSmash"
-                      target="_blank"
-                      style="text-align: center;"
-                    >
-                      <img
-                        src="img/logos-24/CircleSmash.webp"
-                        alt="Circle Smash"
-                        style="width: 40%;margin-bottom: 20px;"
-                      />
-                    </a>
-                  </div>
-                  <div class="portfolio__item__text">
-                    <a
-                      href="https://play.google.com/store/apps/details?id=com.com.Teknack.CircleSmash.CircleSmash"
-                      target="_blank"
-                    >
-                      <h4>Circle Smash</h4>
-                    </a>
-                    <span>Jess John</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
-                <div class="portfolio__item justify-content-center">
-                  <div class="services__title">
-                    <div class="section-title">
-                      <h3>People's Choice</h3>
-                    </div>
-                  </div>
-                  <div style="display: flex;justify-content: center;">
-                    <a
-                      href="https://play.google.com/store/apps/details?id=com.SoloGameDev.teknack"
-                      target="_blank"
-                      style="text-align: center;"
-                    >
-                      <img
-                        src="img/logos-24/BlockadeBrio.webp"
-                        alt="Space Dive"
-                        style="width: 40%;margin-bottom: 20px;"
-                      />
-                    </a>
-                  </div>
-                  <div class="portfolio__item__text">
-                    <a
-                      href="https://play.google.com/store/apps/details?id=com.SoloGameDev.teknack"
-                      target="_blank"
-                    >
-                      <h4>Blockade Brio</h4>
-                    </a>
-                    <span>Shweta Nadar</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <AwardsGrid title="Teknack 2024" awardsData={awardsData["2024"]} />
 
     <!-- 2023 Winners -->
-    <section class="services spad">
+    <section class="services spad dark-bg">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-xs-12 justify-content-center">
@@ -473,7 +326,7 @@ const title = "Hall of Fame";
       </div>
     </section>
 
-    <section class="services spad">
+    <section class="services spad dark-bg">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-xs-12 justify-content-center">
@@ -806,7 +659,7 @@ const title = "Hall of Fame";
       </div>
     </section>
 
-    <section class="services pt-5">
+    <section class="services pt-5 dark-bg">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-xs-12 justify-content-center">
