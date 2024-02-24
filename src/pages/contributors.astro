@@ -1,0 +1,87 @@
+---
+import Header from "../components/Header.astro";
+import Preloader from "../components/Preloader.astro";
+import Navbar from "../components/Navbar.astro";
+import InnerPageHero from "../components/InnerPageHero.astro";
+import Footer from "../components/Footer.astro";
+
+const title = "Contributors";
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <Header title={title} />
+</head>
+
+
+<body>
+    <Preloader />
+    <Navbar />
+    <InnerPageHero title={title} />
+
+    <section class="portfolio spad">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="about__text">
+                        <div class="section-title">
+                            <h2>Chief Developers</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ml-3">
+                <div class="contributor-card col-lg-4 col-md-4 col-sm-12">
+                    <h4>Grejo Joby</h4>
+                    <a href="https://grejo.in" target="_blank" rel="noopener">grejo.in</a>
+                    <!-- <span>Head Developer</span> -->
+                </div>
+                <div class="contributor-card col-lg-4 col-md-4 col-sm-12">
+                    <h4>Hayden Cordeiro</h4>
+                    <a href="https://hayden.co.in" target="_blank" rel="noopener">hayden.co.in</a>
+                    <!-- <span>Head Developer</span> -->
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-12">
+                    <div class="about__text">
+                        <div class="section-title">
+                            <!-- <span>Our Key Developers</span> -->
+                            <h2 style="font-size: 1.8em;">Website Contributors</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ml-3">
+                <div class="contributor-card other-contributors col-lg-3 col-md-3 col-sm-6">
+                    <h4>Siddharth Dhaigude</h4>
+                    <span>Developer</span>
+                </div>
+                <div class="contributor-card other-contributors col-lg-3 col-md-3 col-sm-6">
+                    <h4>Siddhesh Madkaikar</h4>
+                    <span>Developer</span>
+                </div>
+                <div class="contributor-card other-contributors col-lg-3 col-md-3 col-sm-6">
+                    <h4>Prakhar Sharma</h4>
+                    <span>Developer</span>
+                </div>
+                <div class="contributor-card other-contributors col-lg-3 col-md-3 col-sm-6">
+                    <h4>Yashas Khot</h4>
+                    <span>Developer</span>
+                </div>
+                <div class="contributor-card other-contributors col-lg-3 col-md-3 col-sm-6">
+                    <h4>Hariharan Iyer</h4>
+                    <span>Designer</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <Footer />
+</body>
+
+</html>
