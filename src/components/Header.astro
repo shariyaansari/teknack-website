@@ -1,5 +1,6 @@
 ---
-
+const {title} = Astro.props;
+const pageTitle = title + " | Teknack Gaming Studio";
 ---
 <meta charset="UTF-8">
 <meta name="description" content="Teknack is a Gaming Studio run by ACM-DBIT Student Chapter. Teknack is one of the amazing battlefields provided by ACM for students of not just DBIT but
@@ -10,7 +11,7 @@ also of other colleges to boost up their creative skills and pump up their techn
 <meta property="og:image" content="https://dbit.acm.org/teknack/img/favicon/android-chrome-512x512.png">
 <meta property="og:description" content="Teknack is a Gaming Studio run by ACM-DBIT Student Chapter. Teknack is one of the amazing battlefields provided by ACM for students of not just DBIT but
 also of other colleges to boost up their creative skills and pump up their technical skills.">
-
+<meta property="og:title" content={pageTitle}>
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
@@ -27,6 +28,8 @@ also of other colleges to boost up their creative skills and pump up their techn
 <link rel="stylesheet" href="/css/magnific-popup.css" type="text/css">
 <link rel="stylesheet" href="/css/slicknav.min.css" type="text/css">
 <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+<title>{pageTitle}</title>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LG3JX454M"></script>
 <script>
