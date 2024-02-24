@@ -26,7 +26,7 @@ async function getLeaderBoard() {
             div = `<div class="row">
                     <div class="col-1 col-md-2"><span>${element.rank}</span></div>
                     <div class="col-5 col-md-3 leaderboard-game">
-                        <img src="img/logos-22/${element.gameName}.webp">
+                        <img src="/img/logos-22/${element.gameName}.webp">
                         <span>${element.gameName}</span>
                     </div>
                     <div class="col-4 col-md-2"><span>${element.downloads}</span></div>
