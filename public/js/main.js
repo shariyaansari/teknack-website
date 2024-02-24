@@ -75,7 +75,9 @@
             document.getElementById('minutes').innerHTML = padZero(minutes);
             document.getElementById('seconds').innerHTML = padZero(seconds);
         } else {
-            document.getElementById('countdown').innerHTML = "Event Ended";
+            if (document.getElementById('countdown')) {
+                document.getElementById('countdown').innerHTML = "Event Ended";
+            }
         }
     }
 
@@ -83,7 +85,7 @@
         return (number < 10) ? `0${number}` : number;
     }
 
-    
+
     document.addEventListener('DOMContentLoaded', function () {
         updateCountdown();
         setInterval(updateCountdown, 1000);
