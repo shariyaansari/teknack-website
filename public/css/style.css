@@ -2112,3 +2112,6 @@ input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus
 	cursor: pointer;
   } */
   
+  .dark-bg {
+	background: #100028;
+  }

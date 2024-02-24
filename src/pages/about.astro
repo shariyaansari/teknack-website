@@ -1,0 +1,104 @@
+---
+import Header from "../components/Header.astro";
+import Preloader from "../components/Preloader.astro";
+import Navbar from "../components/Navbar.astro";
+import InnerPageHero from "../components/InnerPageHero.astro";
+import Testimonials from "../components/Testimonials.astro";
+import Footer from "../components/Footer.astro";
+
+const pageTitle = "About Us";
+const title = pageTitle + " | Teknack Gaming Studio";
+
+const testimonialData = [
+  {
+    name: "Grejo Joby",
+    gameName: "HoleSync (2020)",
+    imgSrc: "img/testimonial/grejo.webp",
+    text: "What an amazing game! It is so interesting and addictive to keep playing this game. Also amazing UI design and smooth game play. A MUST TRY!!",
+  },
+  {
+    name: "Reuben D'Souza",
+    gameName: "Space Tycoon (2020)",
+    imgSrc: "img/testimonial/reuben.webp",
+    text: "Got nothing to do during this lockdown? Download this masterclass game and see how time flies. Share this game to 10 more people or 2020 won't go any better for you.",
+  },
+  {
+    name: "Fiona Rodrigues",
+    gameName: "Space Rangers (2020)",
+    imgSrc: "img/testimonial/fiona.webp",
+    text: "I'm hooked to this game! It's so user friendly to operate and has a great backstory to the character 😁, also the best part about it is there aren't any ad interruptions.",
+  },
+  {
+    name: "Rishabh Jain",
+    gameName: "Survival (2019)",
+    imgSrc: "img/testimonial/rishab.webp",
+    text: "loved it. nice colors and design and it is just as simple as one may like ot to be. 👍 ",
+  },
+  {
+    name: "Shubham Dutta",
+    gameName: "Upside Down (2019)",
+    imgSrc: "img/testimonial/Shubham.webp",
+    text: "Needed something just like this game. Liked it very much.",
+  },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta property="og:title" content={title} />
+    <title>{title}</title>
+    <Header />
+  </head>
+
+  <body>
+    <Preloader />
+    <Navbar />
+    <InnerPageHero title={pageTitle} />
+
+    <!-- About Section Begin -->
+    <section class="about spad">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="about__text">
+              <div class="section-title">
+                <span>ACM DBIT Student Chapter</span>
+                <h2>Teknack Gaming Studio</h2>
+              </div>
+
+              <div class="about__text__desc">
+                <p style="font-size: large;">
+                  ACM-DBIT chapter took birth in the year 2003 and is in its
+                  20th year of enhancing Dbitians' lives by providing a platform
+                  to enjoy learning. Teknack is one of the amazing battlefields
+                  provided by ACM for students of not just DBIT but also of
+                  other colleges to boost up their creative skills and pump up
+                  their technical skills by amalgamating with newer ideas and
+                  facts to build up Games that give the players an experience
+                  that would last with them forever.
+                  <br /><br />
+
+                  An act once done becomes a memory…But an action consciously
+                  done again and again makes an habit that upskills one's soul
+                  to being a better human. And one of the best ways to carve
+                  some good ideas into minds, especially of the young is through
+                  a game and keeping this in mind, Teknack has produced some
+                  value-enhancing games that give the player a chill down the
+                  spine.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <Testimonials
+      title="What Players Say?"
+      subText="Amazing Reviews"
+      data={testimonialData}
+    />
+    <Footer />    
+  </body>
+</html>
