@@ -656,7 +656,7 @@ ul,ol {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background: url(../img/team/team-hover.png);
+	background: url(/img/team/team-hover.png);
 	content: "";
 	z-index: -1;
 }
@@ -695,7 +695,7 @@ ul,ol {
 }
 .blog__item.latest__item:hover {
 	border: 1px solid #222222 !important;
-	background: url(../img/blog/blog-1.jpg);
+	background: url(/img/blog/blog-1.jpg);
 	background-size: cover;
 }
 .latest__slider.owl-carousel .owl-item .col-lg-4 {
@@ -1182,7 +1182,7 @@ ul,ol {
 }
 .blog__item:hover {
 	border: 1px solid transparent !important;
-	background: url(../img/blog/blog-2.jpg) no-repeat;
+	background: url(/img/blog/blog-2.jpg) no-repeat;
 	background-size: cover;
 }
 .blog__item:hover ul li {
@@ -2000,7 +2000,7 @@ input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus
 /* LeaderBoard */
 
 .leaderboard-bg {
-	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/leaderboard-bg.webp'); 
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/img/leaderboard-bg.webp'); 
 	background-size: cover;
 }
 
