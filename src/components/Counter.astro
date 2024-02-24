@@ -1,0 +1,77 @@
+---
+const { counterData, updatedDate } = Astro.props;
+// Only supports 4 counters
+// Sample Data:
+// [
+//     {
+//         text: "ABC",
+//         num: 9 ,
+//         icon: "",
+//     },
+// ]
+let isValidData = false;
+if (counterData && counterData.length == 4) {
+  isValidData = true;
+}
+---
+{
+    !isValidData &&
+    <p class="text-center">Counter Only Supports 4 counters. Please Check Data!</p>
+}
+
+{
+  isValidData && (
+    <section class="counter">
+      <div class="container">
+        <div class="counter__content">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="counter__item">
+                <div class="counter__item__text">
+                  <img src={counterData[0].icon} alt={counterData[0].text} />
+                  <h2 class="counter_num">{counterData[0].num}</h2>
+                  <p>{counterData[0].text}</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="counter__item second__item">
+                <div class="counter__item__text">
+                  <img src={counterData[1].icon} alt={counterData[1].text} />
+                  <h2 class="counter_num">{counterData[1].num}</h2>
+                  <p>{counterData[1].text}</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="counter__item third__item">
+                <div class="counter__item__text">
+                  <img src={counterData[2].icon} alt={counterData[2].text} />
+                  <h2 class="counter_num">{counterData[2].num}</h2>
+                  <p>{counterData[2].text}</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="counter__item four__item">
+                <div class="counter__item__text">
+                  <img src={counterData[3].icon} alt={counterData[3].text} />
+                  <h2 class="counter_num">{counterData[3].num}</h2>
+                  <p>{counterData[3].text}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div
+          class="col-sm-10"
+          style="justify-content: flex-end; justify-self: flex-end;"
+        >
+          <p class="text-right mt-5 pt-5">*As of {updatedDate}</p>
+        </div>
+      </div>
+    </section>
+  )
+}

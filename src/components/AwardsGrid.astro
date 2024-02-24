@@ -1,0 +1,99 @@
+---
+let { title, awardsData } = Astro.props;
+title = "Teknack 2024 Winners";
+awardsData = [
+  {
+    awardTitle: "Best Game UI",
+    gameName: "Rina : The Lost Soul",
+    devNames: "Arkaprabha Ghosh, Nathan Pimenta, Shaun Rodrigues",
+    gameLink: "https://play.google.com/store/apps/details?id=com.teknack.rina",
+    gameIcon: "img/logos-24/rina.webp",
+  },
+  {
+    awardTitle: "Best GamePlay",
+    gameName: "Starfall : Odyssey",
+    devNames: "Nishith Lopes, Raghav Ghoil, Sahil Khude",
+    gameLink:
+      "https://play.google.com/store/apps/details?id=com.teknack.starfall",
+    gameIcon: "img/logos-24/StarfallOdyssey.webp",
+  },
+  {
+    awardTitle: "Best Game Concept",
+    gameName: "Circle Smash",
+    devNames: "Jess John",
+    gameLink:
+      "https://play.google.com/store/apps/details?id=com.com.Teknack.CircleSmash.CircleSmash",
+    gameIcon: "img/logos-24/CircleSmash.webp",
+  },
+  {
+    awardTitle: "People's Choice",
+    gameName: "Blockade Brio",
+    devNames: "Shweta Nadar",
+    gameLink:
+      "https://play.google.com/store/apps/details?id=com.SoloGameDev.teknack",
+    gameIcon: "img/logos-24/BlockadeBrio.webp",
+  },
+];
+---
+
+<section
+  id="teknack-23"
+  class="spad set-bg"
+  data-setbg="img/breadcrumb-bg.jpg"
+  style="position: relative;"
+>
+  <div
+    style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: black;opacity: 0.6;"
+  >
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="row text-center justify-content-center">
+        <div class="col" style="vertical-align: middle;">
+          <h2
+            style="font-family: 'Play', sans-serif
+                    ; font-weight: 700; font-size: 36px; text-transform: uppercase; color: #fff; margin-bottom: 50px;"
+          >
+            {title}
+          </h2>
+        </div>
+      </div>
+      <div class="col-xs-12 col-lg-12">
+        <div class="row">
+          {
+            awardsData.map((item) => (
+              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
+                <div class="portfolio__item justify-content-center">
+                  <div class="services__title">
+                    <div class="section-title">
+                      <h3>{item.awardTitle}</h3>
+                    </div>
+                  </div>
+                  <div style="display: flex;justify-content: center;align-items: center;">
+                    <a
+                      href={item.gameLink}
+                      target="_blank"
+                      style="text-align: center;"
+                    >
+                      <img
+                        src={item.gameIcon}
+                        style="width: 40%;margin:auto;margin-bottom: 20px;"
+                        alt={item.gameName}
+                      />
+                    </a>
+                  </div>
+                  <div class="portfolio__item__text">
+                    <a href={item.gameLink} target="_blank">
+                      <h4>{item.gameName}</h4>
+                    </a>
+                    <span>{item.devNames}</span>
+                  </div>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

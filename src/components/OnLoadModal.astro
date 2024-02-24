@@ -1,0 +1,40 @@
+---
+const {title, imgSrc, btnText, btnLink} = Astro.props;
+---
+
+<div
+  class="modal fade"
+  id="staticBackdrop"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          data-dismiss="modal"
+          aria-label="Close"
+          id="closeModal">X</button
+        >
+        <img src={imgSrc} alt={title} />
+      </div>
+      <div class="modal-footer justify-content-center">
+        <a href={btnLink} style="width: 90%;"
+          ><button type="button" class="btn site-btn">{btnText}</button></a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", function (event) {
+    $(".modal").modal("show");
+  });
+</script>
