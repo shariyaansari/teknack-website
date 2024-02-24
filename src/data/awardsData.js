@@ -1,4 +1,4 @@
-export default awardsData = {
+const awardsData = {
     "2024": [
         {
             awardTitle: "Best Game UI",
@@ -33,3 +33,5 @@ export default awardsData = {
         },
     ],
 };
+
+export default awardsData;
