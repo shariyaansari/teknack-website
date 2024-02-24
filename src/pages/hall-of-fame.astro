@@ -1,0 +1,928 @@
+---
+import Header from "../components/Header.astro";
+import Preloader from "../components/Preloader.astro";
+import Navbar from "../components/Navbar.astro";
+import InnerPageHero from "../components/InnerPageHero.astro";
+import Footer from "../components/Footer.astro";
+
+const title = "Hall of Fame";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Header title={title} />
+  </head>
+
+  <body>
+    <Preloader />
+    <Navbar />
+    <InnerPageHero title={title} />
+    <!-- 2024 Winners -->
+    <section class="services spad">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xs-12 justify-content-center">
+            <div class="services__title" style="text-align: center;">
+              <div class="section-title">
+                <span style="font-size: 40px;font-weight: 700;"
+                  >Teknack 2024</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-lg-12">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
+                <div class="portfolio__item justify-content-center">
+                  <div class="services__title">
+                    <div class="section-title">
+                      <h3>Best Game UI</h3>
+                    </div>
+                  </div>
+                  <div
+                    style="display: flex;justify-content: center;align-items: center;"
+                  >
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.teknack.rina"
+                      target="_blank"
+                      style="text-align: center;"
+                    >
+                      <img
+                        src="img/logos-24/rina.webp"
+                        style="width: 40%;margin:auto;margin-bottom: 20px;"
+                        alt="Rina"
+                      />
+                    </a>
+                  </div>
+                  <div class="portfolio__item__text">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.teknack.rina"
+                      target="_blank"
+                    >
+                      <h4>Rina : The Lost Soul</h4>
+                    </a>
+                    <span
+                      >Arkaprabha Ghosh, Nathan Pimenta, Shaun Rodrigues</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
+                <div class="portfolio__item justify-content-center">
+                  <div class="services__title">
+                    <div class="section-title">
+                      <h3>Best GamePlay</h3>
+                    </div>
+                  </div>
+                  <div style="display: flex;justify-content: center;">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.teknack.starfall"
+                      target="_blank"
+                      style="text-align: center;"
+                    >
+                      <img
+                        src="img/logos-24/StarfallOdyssey.webp"
+                        alt="Starfall Odyssey"
+                        style="width: 40%;margin-bottom: 20px;"
+                      />
+                    </a>
+                  </div>
+                  <div class="portfolio__item__text">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.teknack.starfall"
+                      target="_blank"
+                    >
+                      <h4>Starfall : Odyssey</h4>
+                    </a>
+                    <span>Nishith Lopes, Raghav Ghoil, Sahil Khude</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
+                <div class="portfolio__item justify-content-center">
+                  <div class="services__title">
+                    <div class="section-title">
+                      <h3>Best Game Concept</h3>
+                    </div>
+                  </div>
+                  <div style="display: flex;justify-content: center;">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.com.Teknack.CircleSmash.CircleSmash"
+                      target="_blank"
+                      style="text-align: center;"
+                    >
+                      <img
+                        src="img/logos-24/CircleSmash.webp"
+                        alt="Circle Smash"
+                        style="width: 40%;margin-bottom: 20px;"
+                      />
+                    </a>
+                  </div>
+                  <div class="portfolio__item__text">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.com.Teknack.CircleSmash.CircleSmash"
+                      target="_blank"
+                    >
+                      <h4>Circle Smash</h4>
+                    </a>
+                    <span>Jess John</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
+                <div class="portfolio__item justify-content-center">
+                  <div class="services__title">
+                    <div class="section-title">
+                      <h3>People's Choice</h3>
+                    </div>
+                  </div>
+                  <div style="display: flex;justify-content: center;">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.SoloGameDev.teknack"
+                      target="_blank"
+                      style="text-align: center;"
+                    >
+                      <img
+                        src="img/logos-24/BlockadeBrio.webp"
+                        alt="Space Dive"
+                        style="width: 40%;margin-bottom: 20px;"
+                      />
+                    </a>
+                  </div>
+                  <div class="portfolio__item__text">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.SoloGameDev.teknack"
+                      target="_blank"
+                    >
+                      <h4>Blockade Brio</h4>
+                    </a>
+                    <span>Shweta Nadar</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2023 Winners -->
+    <section class="services spad">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xs-12 justify-content-center">
+            <div class="services__title" style="text-align: center;">
+              <div class="section-title">
+                <span style="font-size: 40px;font-weight: 700;"
+                  >Teknack 2023</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-lg-12">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
+                <div class="portfolio__item justify-content-center">
+                  <div class="services__title">
+                    <div class="section-title">
+                      <h3>Best Game UI</h3>
+                    </div>
+                  </div>
+                  <div
+                    style="display: flex;justify-content: center;align-items: center;"
+                  >
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.com.Teknack.BurnoutBlitz.BurnoutBlitz"
+                      target="_blank"
+                      style="text-align: center;"
+                    >
+                      <img
+                        src="img/logos-23/burnout-blitz.webp"
+                        style="width: 40%;margin:auto;margin-bottom: 20px;"
+                        alt="Burnout Blitz"
+                      />
+                    </a>
+                  </div>
+                  <div class="portfolio__item__text">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.com.Teknack.BurnoutBlitz.BurnoutBlitz"
+                      target="_blank"
+                    >
+                      <h4>Burnout Blitz</h4>
+                    </a>
+                    <span>Atharva Patel, Umera Shaikh</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
+                <div class="portfolio__item justify-content-center">
+                  <div class="services__title">
+                    <div class="section-title">
+                      <h3>Best GamePlay</h3>
+                    </div>
+                  </div>
+                  <div style="display: flex;justify-content: center;">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.com.Teknack.SkylineBlitz.SkylineBlitz"
+                      target="_blank"
+                      style="text-align: center;"
+                    >
+                      <img
+                        src="img/logos-23/skyline-blitz.webp"
+                        alt="Skyline Blitz"
+                        style="width: 40%;margin-bottom: 20px;"
+                      />
+                    </a>
+                  </div>
+                  <div class="portfolio__item__text">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.com.Teknack.SkylineBlitz.SkylineBlitz"
+                      target="_blank"
+                    >
+                      <h4>Skyline Blitz</h4>
+                    </a>
+                    <span>Andrea Fernandes, Nashrah Ansari</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
+                <div class="portfolio__item justify-content-center">
+                  <div class="services__title">
+                    <div class="section-title">
+                      <h3>Best Game Concept</h3>
+                    </div>
+                  </div>
+                  <div style="display: flex;justify-content: center;">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Teknack.TheLoneBot"
+                      target="_blank"
+                      style="text-align: center;"
+                    >
+                      <img
+                        src="img/logos-23/TheLoneBot.webp"
+                        alt="The Lone Bot"
+                        style="width: 40%;margin-bottom: 20px;"
+                      />
+                    </a>
+                  </div>
+                  <div class="portfolio__item__text">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Teknack.TheLoneBot"
+                      target="_blank"
+                    >
+                      <h4>The Lone Bot</h4>
+                    </a>
+                    <span>Gaurav Samanta</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
+                <div class="portfolio__item justify-content-center">
+                  <div class="services__title">
+                    <div class="section-title">
+                      <h3>People's Choice</h3>
+                    </div>
+                  </div>
+                  <div style="display: flex;justify-content: center;">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.com.Teknack.Spacedive.Spacedive"
+                      target="_blank"
+                      style="text-align: center;"
+                    >
+                      <img
+                        src="img/logos-23/spacedive.webp"
+                        alt="Space Dive"
+                        style="width: 40%;margin-bottom: 20px;"
+                      />
+                    </a>
+                  </div>
+                  <div class="portfolio__item__text">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.com.Teknack.Spacedive.Spacedive"
+                      target="_blank"
+                    >
+                      <h4>Space Dive</h4>
+                    </a>
+                    <span
+                      >Madhavi Purohit, Sanika Chaudhari, Crezel Mendonca</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services spad">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xs-12 justify-content-center">
+            <div class="services__title" style="text-align: center;">
+              <div class="section-title">
+                <span style="font-size: 40px;font-weight: 700;"
+                  >Teknack 2022</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-lg-12">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
+                <div class="portfolio__item justify-content-center">
+                  <div class="services__title">
+                    <div class="section-title">
+                      <h3>Best Game UI</h3>
+                    </div>
+                  </div>
+                  <div
+                    style="display: flex;justify-content: center;align-items: center;"
+                  >
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Teknack.SkyGliders"
+                      target="_blank"
+                      style="text-align: center;"
+                    >
+                      <img
+                        src="img/logos-22/SkyGliders.webp"
+                        style="width: 40%;margin:auto;margin-bottom: 20px;"
+                        alt="Sky Gliders"
+                      />
+                    </a>
+                  </div>
+                  <div class="portfolio__item__text">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Teknack.SkyGliders"
+                      target="_blank"
+                    >
+                      <h4>Sky Gliders</h4>
+                    </a>
+                    <span
+                      >Likla Sinha, Shambhuraj Dhanawade, Gaurav Samanta</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
+                <div class="portfolio__item justify-content-center">
+                  <div class="services__title">
+                    <div class="section-title">
+                      <h3>Best GamePlay</h3>
+                    </div>
+                  </div>
+                  <div style="display: flex;justify-content: center;">
+                    <a
+                      href="https://teknack.itch.io/dawn-of-survival"
+                      target="_blank"
+                      style="text-align: center;"
+                    >
+                      <img
+                        src="img/logos-22/DawnOfSurvival.webp"
+                        alt="DawnOfSurvival"
+                        style="width: 40%;margin-bottom: 20px;"
+                      />
+                    </a>
+                  </div>
+                  <div class="portfolio__item__text">
+                    <a
+                      href="https://teknack.itch.io/dawn-of-survival"
+                      target="_blank"
+                    >
+                      <h4>Dawn of Survival</h4>
+                    </a>
+                    <span>Ambuj Pandey, Siddhant Naidu</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
+                <div class="portfolio__item justify-content-center">
+                  <div class="services__title">
+                    <div class="section-title">
+                      <h3>Best Game Concept</h3>
+                    </div>
+                  </div>
+                  <div style="display: flex;justify-content: center;">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Teknack.RescueBud"
+                      target="_blank"
+                      style="text-align: center;"
+                    >
+                      <img
+                        src="img/logos-22/RescueBud.webp"
+                        alt="RescueBud"
+                        style="width: 40%;margin-bottom: 20px;"
+                      />
+                    </a>
+                  </div>
+                  <div class="portfolio__item__text">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Teknack.RescueBud"
+                      target="_blank"
+                    >
+                      <h4>RescueBud</h4>
+                    </a>
+                    <span>Manish Shingre, Sahil Shelke, Bipin Giri</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
+                <div class="portfolio__item justify-content-center">
+                  <div class="services__title">
+                    <div class="section-title">
+                      <h3>People's Choice</h3>
+                    </div>
+                  </div>
+                  <div style="display: flex;justify-content: center;">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Teknack.PerilousWays"
+                      target="_blank"
+                      style="text-align: center;"
+                    >
+                      <img
+                        src="img/logos-22/PerilousWays.webp"
+                        alt="WaveSurfer"
+                        style="width: 40%;margin-bottom: 20px;"
+                      />
+                    </a>
+                  </div>
+                  <div class="portfolio__item__text">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Teknack.PerilousWays"
+                      target="_blank"
+                    >
+                      <h4>Perilous Ways</h4>
+                    </a>
+                    <span>Erica Dsouza, Lavena Babu, Gauri Malpani</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services spad">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xs-12 justify-content-center">
+            <div class="services__title" style="text-align: center;">
+              <div class="section-title">
+                <span style="font-size: 40px;font-weight: 700;"
+                  >Teknack 2021</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-lg-12">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
+                <div class="portfolio__item justify-content-center">
+                  <div class="services__title">
+                    <div class="section-title">
+                      <h3>Best Game UI</h3>
+                    </div>
+                  </div>
+                  <div
+                    style="display: flex;justify-content: center;align-items: center;"
+                  >
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Teknack.Zenscape"
+                      target="_blank"
+                      style="text-align: center;"
+                    >
+                      <img
+                        src="img/logos-21/zenscape.png"
+                        style="width: 40%;margin:auto;margin-bottom: 20px;"
+                        alt="Zenscape"
+                      />
+                    </a>
+                  </div>
+                  <div class="portfolio__item__text">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Teknack.Zenscape"
+                      target="_blank"
+                    >
+                      <h4>Zenscape</h4>
+                    </a>
+                    <span>Jivin Varghese, Ruvin Rodrigues, Hayden Cordeiro</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
+                <div class="portfolio__item justify-content-center">
+                  <div class="services__title">
+                    <div class="section-title">
+                      <h3>Best Game Design</h3>
+                    </div>
+                  </div>
+                  <div style="display: flex;justify-content: center;">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Teknack.BattleOutpostLastgenicsTD"
+                      target="_blank"
+                      style="text-align: center;"
+                    >
+                      <img
+                        src="img/logos-21/BattleOutpost.png"
+                        alt="BattleOutpost"
+                        style="width: 40%;margin-bottom: 20px;"
+                      />
+                    </a>
+                  </div>
+                  <div class="portfolio__item__text">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Teknack.BattleOutpostLastgenicsTD"
+                      target="_blank"
+                    >
+                      <h4>Battle Outpost</h4>
+                    </a>
+                    <span
+                      >Tushar Tripathi, Kallis Nadar, Xytus Vazacholil, Om
+                      Rajurkar</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
+                <div class="portfolio__item justify-content-center">
+                  <div class="services__title">
+                    <div class="section-title">
+                      <h3>Best Game Concept</h3>
+                    </div>
+                  </div>
+                  <div style="display: flex;justify-content: center;">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Teknack.Foodunk"
+                      target="_blank"
+                      style="text-align: center;"
+                    >
+                      <img
+                        src="img/logos-21/foodunk.jpg"
+                        alt="Foodunk"
+                        style="width: 40%;margin-bottom: 20px;"
+                      />
+                    </a>
+                  </div>
+                  <div class="portfolio__item__text">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Teknack.Foodunk"
+                      target="_blank"
+                    >
+                      <h4>Foodunk</h4>
+                    </a>
+                    <span>Andrea Lobo, Alvina Joy, Jason Lobo</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
+                <div class="portfolio__item justify-content-center">
+                  <div class="services__title">
+                    <div class="section-title">
+                      <h3>People's Choice</h3>
+                    </div>
+                  </div>
+                  <div style="display: flex;justify-content: center;">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Teknack.WaveSurfer"
+                      target="_blank"
+                      style="text-align: center;"
+                    >
+                      <img
+                        src="img/logos-21/Logo_Wave_Surfer.png"
+                        alt="WaveSurfer"
+                        style="width: 40%;margin-bottom: 20px;"
+                      />
+                    </a>
+                  </div>
+                  <div class="portfolio__item__text">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Teknack.WaveSurfer"
+                      target="_blank"
+                    >
+                      <h4>Wave Surfer</h4>
+                    </a>
+                    <span>Reena Kale, Adonia Sequeira</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services pt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xs-12 justify-content-center">
+            <div class="services__title" style="text-align: center;">
+              <div class="section-title">
+                <span style="font-size: 40px;font-weight: 700;"
+                  >Teknack 2020</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-lg-12">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
+                <div class="portfolio__item justify-content-center">
+                  <div class="services__title">
+                    <div class="section-title">
+                      <h3>Best Game</h3>
+                    </div>
+                  </div>
+                  <div
+                    style="display: flex;justify-content: center;align-items: center;"
+                  >
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Teknack.SpaceRangerrr"
+                      target="_blank"
+                      style="text-align: center;"
+                    >
+                      <img
+                        src="img/game-logos/SpaceRanger_9.jpeg"
+                        style="width: 40%;margin:auto;margin-bottom: 20px;"
+                        alt="Space Rangers"
+                      />
+                    </a>
+                  </div>
+                  <div class="portfolio__item__text">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Teknack.SpaceRangerrr"
+                      target="_blank"
+                    >
+                      <h4>Space Rangers</h4>
+                    </a>
+                    <span>Adonia Sequeira, Reena Kale</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
+                <div class="portfolio__item justify-content-center">
+                  <div class="services__title">
+                    <div class="section-title">
+                      <h3>Best Game Design</h3>
+                    </div>
+                  </div>
+                  <div style="display: flex;justify-content: center;">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Teknack.SpaceTycoon"
+                      target="_blank"
+                      style="text-align: center;"
+                    >
+                      <img
+                        src="img/game-logos/spacetyccon.png"
+                        alt="Space Tycoon"
+                        style="width: 40%;margin-bottom: 20px;"
+                      />
+                    </a>
+                  </div>
+                  <div class="portfolio__item__text">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Teknack.SpaceTycoon"
+                      target="_blank"
+                    >
+                      <h4>SpaceTycoon</h4>
+                    </a>
+                    <span
+                      >Grejo Joby, Hayden Cordeiro, Atharva Dhanwate, Hariharan
+                      Iyer</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
+                <div class="portfolio__item justify-content-center">
+                  <div class="services__title">
+                    <div class="section-title">
+                      <h3>Most Popular Game</h3>
+                    </div>
+                  </div>
+                  <div style="display: flex;justify-content: center;">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Tecknack.AstroTera"
+                      target="_blank"
+                      style="text-align: center;"
+                    >
+                      <img
+                        src="img/game-logos/astrotera.jpg"
+                        alt="AstroTera"
+                        style="width: 34%;margin-bottom: 20px;"
+                      />
+                    </a>
+                  </div>
+                  <div class="portfolio__item__text">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Tecknack.AstroTera"
+                      target="_blank"
+                    >
+                      <h4>AstroTera</h4>
+                    </a>
+                    <span>Soham Shinde, Jordan D'Souza, Manmeet</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
+                <div class="portfolio__item justify-content-center">
+                  <div class="services__title">
+                    <div class="section-title">
+                      <h3>Best Game Concept</h3>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-6">
+                      <div style="display: flex;justify-content: center;">
+                        <a
+                          href="https://play.google.com/store/apps/details?id=com.Teknack.HoleSync"
+                          target="_blank"
+                          style="text-align: center;"
+                        >
+                          <img
+                            src="img/game-logos/Holesync.png"
+                            alt="HoleSync"
+                            style="width: 72%;margin-bottom: 20px;"
+                          />
+                        </a>
+                      </div>
+                      <div class="portfolio__item__text">
+                        <a
+                          href="https://play.google.com/store/apps/details?id=com.Teknack.HoleSync"
+                          target="_blank"
+                        >
+                          <h4>HoleSync</h4>
+                        </a>
+                        <span>Pakshal Ranawat, Yash Nage</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div style="display: flex;justify-content: center;">
+                        <a
+                          href="https://play.google.com/store/apps/details?id=com.Teknack.SDROIDS"
+                          target="_blank"
+                          style="text-align: center;"
+                        >
+                          <img
+                            src="img/game-logos/sdroids.png"
+                            alt="SDroids"
+                            style="width: 80%;margin-bottom: 20px;"
+                          />
+                        </a>
+                      </div>
+                      <div class="portfolio__item__text">
+                        <a
+                          href="https://play.google.com/store/apps/details?id=com.Teknack.SDROIDS"
+                          target="_blank"
+                        >
+                          <h4>SDroids</h4>
+                        </a>
+                        <span>Ankit, Tina</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services pt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xs-12 justify-content-center">
+            <div class="services__title" style="text-align: center;">
+              <div class="section-title">
+                <span style="font-size: 40px;font-weight: 700;"
+                  >Teknack 2019</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-lg-12">
+            <div class="row justify-content-center">
+              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
+                <div class="portfolio__item justify-content-center">
+                  <div class="services__title">
+                    <div class="section-title">
+                      <h3>Winner - Development</h3>
+                    </div>
+                  </div>
+                  <div
+                    style="display: flex;justify-content: center;align-items: center;"
+                  >
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Teknack.UpSideDown"
+                      target="_blank"
+                      style="text-align: center;"
+                    >
+                      <img
+                        src="img/game-logos/UpsideDown.png"
+                        style="width: 90%;margin:auto;margin-bottom: 20px;"
+                        alt="Upside Down"
+                      />
+                    </a>
+                  </div>
+                  <div class="portfolio__item__text">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Teknack.UpSideDown"
+                      target="_blank"
+                    >
+                      <h4>Upside Down</h4>
+                    </a>
+                    <span>Mihir Chitra, Yogesh Patil</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
+                <div class="portfolio__item justify-content-center">
+                  <div class="services__title">
+                    <div class="section-title">
+                      <h3>Runner Up - Development</h3>
+                    </div>
+                  </div>
+                  <div style="display: flex;justify-content: center;">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Teknack.StackIT"
+                      target="_blank"
+                      style="text-align: center;"
+                    >
+                      <img
+                        src="img/game-logos/StackIt.png"
+                        alt="Stack It!"
+                        style="width: 90%;margin-bottom: 20px;"
+                      />
+                    </a>
+                  </div>
+                  <div class="portfolio__item__text">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Teknack.StackIT"
+                      target="_blank"
+                    >
+                      <h4>Stack It!</h4>
+                    </a>
+                    <span>Dheeraj James, Reuben Crasto</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
+                <div class="portfolio__item justify-content-center">
+                  <div class="services__title">
+                    <div class="section-title">
+                      <h3>Most Played Game</h3>
+                    </div>
+                  </div>
+                  <div style="display: flex;justify-content: center;">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Teknack.Survival"
+                      target="_blank"
+                      style="text-align: center;"
+                    >
+                      <img
+                        src="img/game-logos/Survival.png"
+                        alt="Survival"
+                        style="width: 90%;margin-bottom: 20px;"
+                      />
+                    </a>
+                  </div>
+                  <div class="portfolio__item__text">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Teknack.Survival"
+                      target="_blank"
+                    >
+                      <h4>Survival</h4>
+                    </a>
+                    <span>Sai Charan Kommana</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <Footer />
+  </body>
+</html>
