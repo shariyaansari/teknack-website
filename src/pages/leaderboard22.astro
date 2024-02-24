@@ -1,0 +1,49 @@
+---
+import Header from "../components/Header.astro";
+import Preloader from "../components/Preloader.astro";
+import Navbar from "../components/Navbar.astro";
+import InnerPageHero from "../components/InnerPageHero.astro";
+import Footer from "../components/Footer.astro";
+
+const title = "2022 Leaderboard";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Header title={title} />
+    <meta name="robots" content="noindex, nofollow" />
+  </head>
+
+  <body>
+    <Preloader />
+    <Navbar />
+    <InnerPageHero title={title} />
+    <!-- Leader Board Section Begin -->
+    <section class="lead spad leaderboard-bg">
+      <div class="container leaderboard">
+        <div class="row leaderboard-title">
+          <div class="col-2 col-md-2">
+            <h3>Rank</h3>
+          </div>
+          <div class="col-4 col-md-3">
+            <h3>Game</h3>
+          </div>
+          <div class="col-4 col-md-2">
+            <h3>Downloads</h3>
+          </div>
+          <div class="col-2 col-md-2">
+            <h3>Likes</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <Footer />
+    <!-- Local Scripts -->
+    <script src="/js/leaderboard.js"></script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      is:inline></script>
+  </body>
+</html>
