@@ -6,13 +6,36 @@ import InnerPageHero from "../components/InnerPageHero.astro";
 import Footer from "../components/Footer.astro";
 
 const title = "Gallery";
+
+const GALLERY_QUERY_URL =
+  "https://ap-south-1.cdn.hygraph.com/content/cltbq9vfc2yji07usol18sfzd/master?query=query%20Assets%20%7B%0A%20%20galleryImages(orderBy%3A%20year_DESC%2C%20last%3A%20500)%20%7B%0A%20%20%20%20title%0A%20%20%20%20tags%0A%20%20%20%20images%20%7B%0A%20%20%20%20%20%20url%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A";
+
+let galleryData = [];
+const resp = await fetch(GALLERY_QUERY_URL);
+let data = await resp.json();
+data = data.data.galleryImages;
+
+for (let i = 0; i < data.length; i++) {
+  for (let j = 0; j < data[i].images.length; j++) {
+    var item = {
+      title: data[i].title,
+      tags: data[i].tags,
+      classes:
+        "gallery-grid-item col-sm-6 col-lg-4 mb-2" +
+        " " +
+        data[i].tags.join(" "),
+      imgSrc: data[i].images[j].url,
+    };
+    galleryData.push(item);
+  }
+}
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <Header title={title} />
-    <link rel="stylesheet" href="/css/gallery.css" type="text/css">
+    <link rel="stylesheet" href="/css/gallery.css" type="text/css" />
   </head>
 
   <body>
@@ -23,346 +46,30 @@ const title = "Gallery";
     <section class="galleryBox">
       <div class="container">
         <div class="row no-gutters">
-          <!--<div class="filtering col-sm-12 text-center">
-                    <span data-filter="*" class="active">All</span>
-                    <span data-filter=".awards" class="">Awards</span>
-                    <span data-filter=".events" class="">Events</span>
-                    <span data-filter=".games" class="">Games</span>
-                    <span data-filter=".posters" class="">Posters</span>
-                </div>-->
+          <div class="filtering col-sm-12 text-center">
+            <span data-filter="*" class="active">All</span>
+            <span data-filter=".Awards" class="">Awards</span>
+            <span data-filter=".Events" class="">Events</span>
+            <span data-filter=".Training" class="">Training</span>
+            <span data-filter=".Posters" class="">Posters</span>
+          </div>
           <div class="col-12 text-center w-100">
-            <div class="form-row gallery">
-              <div class="col-sm-6 col-lg-4 mb-2 awards">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2023/DBCL-DBIT-TECKNACK 23-162.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
+            <div class="form-row gallery gallery-grid">
+              {
+                galleryData.map((item) => (
+                  <div class={item.classes} data-src={item.imgSrc}>
+                    <div class="portfolio-wrapper">
+                      <div class="portfolio-image">
+                        <img
+                          src={item.imgSrc}
+                          alt={item.title}
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 awards">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2023/DBCL-DBIT-TECKNACK 23-144.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 awards">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2023/DBCL-DBIT-TECKNACK 23-149.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 awards">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2023/DBCL-DBIT-TECKNACK 23-158.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 awards">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2023/DBCL-DBIT-TECKNACK 23-99.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 awards">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2023/DBCL-DBIT-TECKNACK 23-92.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 awards">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2023/DBCL-DBIT-TECKNACK-_23-313.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 awards">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2023/DBCL-DBIT-TECKNACK 23-7.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 awards">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2023/DBCL-DBIT-TECKNACK 23-410.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 awards">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2023/DBCL-DBIT-TECKNACK 23-404.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 awards">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2023/DBCL-DBIT-TECKNACK 23-38.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 awards">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2023/DBCL-DBIT-TECKNACK 23-349.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 awards">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2023/DBCL-DBIT-TECKNACK-_23-63.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 awards">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2023/DBCL-DBIT-TECKNACK-_23-223.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 awards">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2023/DBCL-DBIT-TECKNACK 23-167.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 awards">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2023/DBCL-DBIT-TECKNACK 23-345.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 awards">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2023/DBCL-DBIT-TECKNACK-_23-197.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 awards">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2023/DBCL-DBIT-TECKNACK 23-269.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 awards">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2023/DBCL-DBIT-TECKNACK 23-23.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 awards">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2023/DBCL-DBIT-TECKNACK 23-213.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-lg-4 mb-2 events">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2022/team.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 events">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2022/event-5.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 events">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2022/event-4.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 events">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2022/event-3.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 events">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2022/event-2(1).webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 events">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2022/event-1.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 events">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2022/opening.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 posters">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2022/poster-1.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 posters">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2022/poster-2.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-4 mb-2 posters">
-                <div class="portfolio-wrapper">
-                  <div class="portfolio-image">
-                    <img
-                      src="/img/gallery/teknack-2022/poster-3.webp"
-                      alt="Teknack Felicitation 2022"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
+                ))
+              }
             </div>
           </div>
         </div>
