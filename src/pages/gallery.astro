@@ -35,6 +35,12 @@ for (let i = 0; i < data.length; i++) {
 <html lang="en">
   <head>
     <Header title={title} />
+
+    <link
+      rel="stylesheet"
+      href="/vendor/lightbox2/css/lightbox.min.css"
+      type="text/css"
+    />
     <link rel="stylesheet" href="/css/gallery.css" type="text/css" />
   </head>
 
@@ -57,16 +63,18 @@ for (let i = 0; i < data.length; i++) {
             <div class="form-row gallery gallery-grid">
               {
                 galleryData.map((item) => (
-                  <div class={item.classes} data-src={item.imgSrc}>
-                    <div class="portfolio-wrapper">
-                      <div class="portfolio-image">
-                        <img
-                          src={item.imgSrc}
-                          alt={item.title}
-                          loading="lazy"
-                        />
+                  <div class={item.classes}>
+                    <a href={item.imgSrc} data-lightbox="teknack-gallery">
+                      <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                          <img
+                            src={item.imgSrc}
+                            alt={item.title}
+                            loading="lazy"
+                          />
+                        </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                 ))
               }
@@ -77,6 +85,7 @@ for (let i = 0; i < data.length; i++) {
     </section>
 
     <Footer />
+    <script src="/vendor/lightbox2/js/lightbox.min.js" is:inline></script>
     <script src="/js/gallery.js" is:inline></script>
   </body>
 </html>
