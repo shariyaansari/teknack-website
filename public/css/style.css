@@ -1711,12 +1711,12 @@ option {
 	.slicknav_nav .slicknav_row:hover {
 		border-radius: 0;
 		background: transparent;
-		color: #111111;
+		color: #eee;
 	}
 	.slicknav_nav a:hover {
 		border-radius: 0;
 		background: transparent;
-		color: #111111;
+		color: #eee;
 	}
 	.slicknav_nav {
 		background: #222222;
@@ -1809,12 +1809,12 @@ option {
 	.slicknav_nav .slicknav_row:hover {
 		border-radius: 0;
 		background: transparent;
-		color: #111111;
+		color: #eee;
 	}
 	.slicknav_nav a:hover {
 		border-radius: 0;
 		background: transparent;
-		color: #111111;
+		color: #eee;
 	}
 	.slicknav_nav {
 		background: #222222;
