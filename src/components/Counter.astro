@@ -1,77 +1,98 @@
 ---
-const { counterData, updatedDate } = Astro.props;
-// Only supports 4 counters
-// Sample Data:
-// [
-//     {
-//         text: "ABC",
-//         num: 9 ,
-//         icon: "",
-//     },
-// ]
-let isValidData = false;
-if (counterData && counterData.length == 4) {
-  isValidData = true;
-}
+const counterData = [
+  {
+    text: "Released Games",
+    numCount: "94",
+    icon: "/img/icons/ci-1.png",
+  },
+  {
+    text: "Downloads",
+    numCount: 17123,
+    icon: "/img/icons/ci-2.png",
+  },
+  {
+    text: "Developers",
+    numCount: 200,
+    icon: "/img/icons/ci-3.png",
+  },
+  {
+    text: "Years",
+    numCount: 6,
+    icon: "/img/icons/ci-4.png",
+  },
+];
+const updatedDate = "04 March, 2024";
 ---
-{
-    !isValidData &&
-    <p class="text-center">Counter Only Supports 4 counters. Please Check Data!</p>
-}
 
-{
-  isValidData && (
-    <section class="counter">
-      <div class="container">
-        <div class="counter__content">
-          <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="counter__item">
-                <div class="counter__item__text">
-                  <img src={counterData[0].icon} alt={counterData[0].text} />
-                  <h2 class="counter_num">{counterData[0].num}</h2>
-                  <p>{counterData[0].text}</p>
-                </div>
-              </div>
+<section class="counter">
+  <div class="container">
+    <div class="counter__content">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="counter__item">
+            <div class="counter__item__text">
+              <img src={counterData[0].icon} alt={counterData[0].text} />
+              <h2 class="counter_num">{counterData[0].numCount}</h2>
+              <p>{counterData[0].text}</p>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="counter__item second__item">
-                <div class="counter__item__text">
-                  <img src={counterData[1].icon} alt={counterData[1].text} />
-                  <h2 class="counter_num">{counterData[1].num}</h2>
-                  <p>{counterData[1].text}</p>
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="counter__item second__item">
+            <div class="counter__item__text">
+              <img src={counterData[1].icon} alt={counterData[1].text} />
+              <h2 class="counter_num">{counterData[1].numCount}</h2>
+              <p>{counterData[1].text}</p>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="counter__item third__item">
-                <div class="counter__item__text">
-                  <img src={counterData[2].icon} alt={counterData[2].text} />
-                  <h2 class="counter_num">{counterData[2].num}</h2>
-                  <p>{counterData[2].text}</p>
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="counter__item third__item">
+            <div class="counter__item__text">
+              <img src={counterData[2].icon} alt={counterData[2].text} />
+              <h2 class="counter_num">{counterData[2].numCount}</h2>
+              <p>{counterData[2].text}</p>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="counter__item four__item">
-                <div class="counter__item__text">
-                  <img src={counterData[3].icon} alt={counterData[3].text} />
-                  <h2 class="counter_num">{counterData[3].num}</h2>
-                  <p>{counterData[3].text}</p>
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="counter__item four__item">
+            <div class="counter__item__text">
+              <img src={counterData[3].icon} alt={counterData[3].text} />
+              <h2 class="counter_num">{counterData[3].numCount}</h2>
+              <p>{counterData[3].text}</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div
-          class="col-sm-10"
-          style="justify-content: flex-end; justify-self: flex-end;"
-        >
-          <p class="text-right mt-5 pt-5">*As of {updatedDate}</p>
-        </div>
-      </div>
-    </section>
-  )
-}
+    </div>
+  </div>
+  <div class="row">
+    <div
+      class="col-sm-10"
+      style="justify-content: flex-end; justify-self: flex-end;"
+    >
+      <p class="text-right mt-5 pt-5">*As of {updatedDate}</p>
+    </div>
+  </div>
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", function () {
+      $(".counter_num").each(function () {
+        $(this)
+          .prop("Counter", 0)
+          .animate(
+            {
+              Counter: $(this).text(),
+            },
+            {
+              duration: 4000,
+              easing: "swing",
+              step: function (now) {
+                $(this).text(Math.ceil(now));
+              },
+            },
+          );
+      });
+    });
+  </script>
+</section>

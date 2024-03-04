@@ -9,28 +9,6 @@ import Counter from "../components/Counter.astro";
 import Footer from "../components/Footer.astro";
 import awardsData from "../data/awardsData.js";
 
-let counterData = [
-  {
-    text: "Released Games",
-    num: "94",
-    icon: "/img/icons/ci-1.png",
-  },
-  {
-    text: "Downloads",
-    num: "17123",
-    icon: "/img/icons/ci-2.png",
-  },
-  {
-    text: "Developers",
-    num: "200",
-    icon: "/img/icons/ci-3.png",
-  },
-  {
-    text: "Years",
-    num: "6",
-    icon: "/img/icons/ci-4.png",
-  },
-];
 const title = "Home";
 ---
 
@@ -135,16 +113,7 @@ const title = "Home";
       btnText="Our Games"
       btnLink="/games"
     />
-    <Counter counterData={counterData} updatedDate="23rd February, 2024" />
+    <Counter />
     <Footer />
-
-    <!-- Js Plugins -->
-    <script src="/js/jquery-3.3.1.min.js" is:inline></script>
-    <script src="/js/bootstrap.min.js" is:inline></script>
-    <script src="/js/jquery.magnific-popup.min.js" is:inline></script>
-    <script src="/js/mixitup.min.js" is:inline></script>
-    <script src="/js/jquery.slicknav.js" is:inline></script>
-    <script src="/js/owl.carousel.min.js" is:inline></script>
-    <script src="/js/main.js" is:inline></script>
   </body>
 </html>
