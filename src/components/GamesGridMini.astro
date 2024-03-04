@@ -1,9 +1,12 @@
 ---
-const { games } = Astro.props;
+const { games, pagePath, title } = Astro.props;
 ---
 
 <section class="portfolio spad">
   <div class="container">
+    <div class="section-title center-title">
+      <h2>{title}</h2>
+    </div>
     <div class="row portfolio__gallery">
       {
         games.map((item) => (
@@ -20,6 +23,11 @@ const { games } = Astro.props;
           </div>
         ))
       }
+    </div>
+    <div class="row mt-5">
+      <div class="col-lg-12" style="justify-content: center; text-align: center;">
+        <a href={pagePath} class="primary-btn">Check all games</a>
+      </div>
     </div>
   </div>
 </section>

@@ -1063,7 +1063,8 @@ ul,ol {
 	opacity: 1;
 }
 .portfolio__item__video {
-	height: 240px;
+	height: 200px;
+	width: 200px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1724,8 +1725,8 @@ option {
 	.slicknav_btn {
 		position: absolute;
 		right: 10px;
-		top: 26px;
-		background: #00bfe7;
+		top: 36px;
+		/* background: #00bfe7; */
 	}
 	.header .container {
 		position: relative;
@@ -1822,8 +1823,8 @@ option {
 	.slicknav_btn {
 		position: absolute;
 		right: 10px;
-		top: 26px;
-		background: #00bfe7;
+		top: 36px;
+		/* background: #00bfe7; */
 	}
 	.header .container {
 		position: relative;
@@ -2117,4 +2118,13 @@ input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus
   }
   .semi-dark-bg {
 	background: #100028;
+  }
+
+  .games__grid__icon {
+	width: 90%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1.5rem;
+	border-radius: 40px;
   }

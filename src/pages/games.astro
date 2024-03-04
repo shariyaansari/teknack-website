@@ -4,6 +4,8 @@ import Preloader from "../components/Preloader.astro";
 import Navbar from "../components/Navbar.astro";
 import InnerPageHero from "../components/InnerPageHero.astro";
 import Footer from "../components/Footer.astro";
+import gamesData from "../data/gamesData.js";
+import GamesGridMini from "../components/GamesGridMini.astro";
 
 const title = "Games";
 ---
@@ -18,6 +20,12 @@ const title = "Games";
     <Preloader />
     <Navbar />
     <InnerPageHero title={title} />
+    <GamesGridMini games={gamesData["2024"].slice(0,8)} title="Teknack 2024" pagePath="/teknack-2024" />
+    <GamesGridMini games={gamesData["2023"].slice(0,8)} title="Teknack 2023" pagePath="/teknack-2023" />
+    <GamesGridMini games={gamesData["2022"].slice(0,8)} title="Teknack 2022" pagePath="/teknack-2022" />
+    <GamesGridMini games={gamesData["2021"].slice(0,8)} title="Teknack 2021" pagePath="/teknack-2021" />
+    <GamesGridMini games={gamesData["2020"].slice(0,8)} title="Teknack 2020" pagePath="/teknack-2020" />
+    <GamesGridMini games={gamesData["2019"].slice(0,8)} title="Teknack 2019" pagePath="/teknack-2019" />
 
     <section class="portfolio spad">
       <div class="section-title center-title">
