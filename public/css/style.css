@@ -2584,3 +2584,12 @@ input:-webkit-autofill:active {
 .hero-subtext {
 	font-size: 1.2em;
 }
+
+.award-title {
+	font-family: 'Play', sans-serif;
+	font-weight: 700;
+	font-size: 2rem;
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 50px;
+}
