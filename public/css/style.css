@@ -121,7 +121,7 @@ ol {
 
 .section-title h3 {
 	color: #ffffff;
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	font-weight: 700;
 	text-transform: uppercase;
 	position: relative;
@@ -2588,7 +2588,7 @@ input:-webkit-autofill:active {
 .award-title {
 	font-family: 'Play', sans-serif;
 	font-weight: 700;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	text-transform: uppercase;
 	color: #fff;
 	margin-bottom: 50px;
