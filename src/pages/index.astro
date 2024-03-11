@@ -1,0 +1,119 @@
+---
+import Header from "../components/Header.astro";
+import Navbar from "../components/Navbar.astro";
+import Preloader from "../components/Preloader.astro";
+import HeroSection from "../components/HeroSection.astro";
+import AwardsGrid from "../components/AwardsGrid.astro";
+import CtaWithoutImage from "../components/CtaWithoutImage.astro";
+import Counter from "../components/Counter.astro";
+import Footer from "../components/Footer.astro";
+import awardsData from "../data/awardsData.js";
+
+const title = "Home";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Header title={title} />
+  </head>
+
+  <body>
+    <Preloader />
+    <Navbar />
+    <HeroSection />
+    <AwardsGrid title="Teknack 2024 Winners" awardsData={awardsData["2024"]} />
+
+    <!-- Services Section Begin -->
+    <section class="services spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="services__title">
+              <div class="section-title">
+                <span>Know about us</span>
+                <h2>What We do?</h2>
+              </div>
+              <p>
+                Teknack is one of the amazing battlefields provided by ACM for
+                students of not just DBIT but also of other colleges to boost up
+                their creative skills and pump up their technical skills by
+                amalgamating with newer ideas and facts to build up Games that
+                give the players an experience that would last with them forever
+              </p>
+              <a href="/games" class="primary-btn">View our Games</a>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="services__item">
+                  <div class="services__item__icon">
+                    <img src="/img/icons/si-1.png" alt="Icon" />
+                  </div>
+                  <h4>Training and Guidance</h4>
+                  <p>
+                    We teach and train the students to develop mobile games
+                    using the Unity Engine. We guide them throughout the journey
+                    from ideation to release of the game.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="services__item">
+                  <div class="services__item__icon">
+                    <img src="/img/icons/si-2.png" alt="Icon" />
+                  </div>
+                  <h4>Unity Development</h4>
+                  <p>
+                    The games are developed using the Unity Engine. Developers
+                    get hands-on experience on the platform through their
+                    journey of development.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="services__item">
+                  <div class="services__item__icon">
+                    <img src="/img/icons/si-3.png" alt="Icon" />
+                  </div>
+                  <h4>Gaming Events and Fest</h4>
+                  <p>
+                    We also host an annual fest named "Teknack" every year and
+                    during this fest, the games are published on Google Play
+                    Store and various awards are declared for the developers.
+                    Also we keep gaming events as part of the fest to inculcate
+                    a gaming culture.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="services__item">
+                  <div class="services__item__icon">
+                    <img src="/img/icons/si-4.png" alt="Icon" />
+                  </div>
+                  <h4>Publishing Games on Play Store</h4>
+                  <p>
+                    The games developed by the students are published on Google
+                    Play Store under the banner of Teknack. This provides them a
+                    platform to showcase their talents and bring out to the
+                    world, their creativity and technical skills.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section End -->
+
+    <CtaWithoutImage
+      title="Wide range of games developed by our aspiring Game Developers."
+      btnText="Our Games"
+      btnLink="/games"
+    />
+    <Counter />
+    <Footer />
+  </body>
+</html>

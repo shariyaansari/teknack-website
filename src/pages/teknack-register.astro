@@ -1,0 +1,299 @@
+---
+import Header from "../components/Header.astro";
+import Preloader from "../components/Preloader.astro";
+import Navbar from "../components/Navbar.astro";
+import InnerPageHero from "../components/InnerPageHero.astro";
+import Footer from "../components/Footer.astro";
+
+const title = "Teknack 2024 Registration";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Header title={title} />
+    <meta name="robots" content="noindex, nofollow" />
+  </head>
+
+  <body>
+    <Preloader />
+    <Navbar />
+    <InnerPageHero title={title} />
+
+    <!-- Portfolio Section Begin -->
+    <section class="portfolio spad">
+      <div class="section-title center-title">
+        <!-- <span>Latest Games</span> -->
+        <h2>Fill out the form to be part of Teknack 2024!</h2>
+      </div>
+      <div class="container">
+        <div class="contact__form">
+          <div class="row" id="descTeknack">
+            <p class="lead" style="color: #e1e1e1;width: 100%;">
+              Hola Developers <br />
+              GUESS WHAT TEKNACK IS BACK! 🔥 <br />
+
+              <!-- Have you ever thought of making your own game then this is for you✨<br> -->
+              Ever wondered what goes behind creating your favourite games?<br
+              />
+              Want to develop your own game but don't know where to start? 🤔<br
+              />
+              Here's an opportunity🤩<br />
+              ACM-DBIT is all set to launch☁️🚀 <br /><br />
+              <b>✨ 𝐓𝐄𝐊𝐍𝐀𝐂𝐊 𝟐4✨</b>
+              <br />
+              <br />
+              At Teknack, you can publish your self made game on Google Play Store
+              while learning to design and develop an Android Game, with complete
+              training and guidance from our experienced mentors at our student managed
+              Gaming Studio.📱!!
+              <br />
+              𝐓𝐞𝐚𝐦 𝐒𝐢𝐳𝐞: 2-3 👨🏻‍💻👩🏻‍💻<br />
+              𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: Unity/Unreal Engine <br />
+              <b>𝐄𝐧𝐭𝐫𝐲 𝐅𝐞𝐞 =𝐑𝐒 150/ 𝐩𝐞𝐫𝐬𝐨𝐧</b> (for ACM-DBIT Members) <br />
+              <b>𝐄𝐧𝐭𝐫𝐲 𝐅𝐞𝐞 =𝐑𝐒 200/ 𝐩𝐞𝐫𝐬𝐨𝐧</b> (for Non Members) <br />
+              <br />
+
+              So what's stopping you? Join us now!! <br />
+              <br />
+              <!--𝐉𝐨𝐢𝐧 𝐭𝐡𝐞 𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐠𝐫𝐨𝐮𝐩 𝐭𝐨 𝐬𝐭𝐚𝐲 𝐮𝐩𝐝𝐚𝐭𝐞𝐝<br>
+                        <!--<a href="https://chat.whatsapp.com/D8dw8X6uOqqFDbZO5fBuj5" target="_blank">Click to Join
+                            WhatsApp Group</a>
+                        <br><br>-->
+              Note: <br />
+              Every participant has to fill this payment form individually.
+
+              <br /><br />
+              For more details, Contact: <br />
+              Yashas : <a href="https://wa.me/+919766857468" target="_blank"
+                >wa.me/+919766857468</a
+              ><br />
+              Niraj : <a href="https://wa.me/+917498004310" target="_blank"
+                >wa.me/+918104882968</a
+              >
+            </p>
+          </div>
+          <!--<div class="row">
+                    <form class="row col-12" name="google-sheet">
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" name="email" class="form-control" id="email"
+                                placeholder="Enter Email ID" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="mobNumber" class="form-label">Mobile Number (WhatsApp Number)</label>
+                            <input type="text" class="form-control" name="mobNumber" id="mobNumber"
+                                placeholder="998877665544" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter Full Name"
+                                required>
+                        </div>
+                        <script type="text/javascript">
+                            function CheckColors(val) {
+                                var element = document.getElementById('clgNameOther');
+                                if (val == 'Others')
+                                    element.style.display = 'block';
+                                else
+                                    element.style.display = 'none';
+                            }
+                        </script>
+                        <div class="col-md-12">
+                            <label for="clgName" class="form-label">College Name</label>
+                            <select class="form-select" name="clgName" id="clgName" onchange='CheckColors(this.value);'
+                                required>
+                                <option selected>Select College Name</option>
+                                <option value="Don Bosco Institute of Technology, Mumbai">Don Bosco Institute of
+                                    Technology, Mumbai</option>
+                                <option value="Others">Others</option>
+                            </select>
+                            <input type="text" name="clgNameOther" id="clgNameOther" style='display:none;'
+                                placeholder="Enter College Name" />
+                        </div>
+                        <div class="col-md-12">
+                            <label for="Year" class="form-label">Year</label>
+                            <select class="form-select" name="Year" id="Year">
+                                <option selected>Select Year</option>
+                                <option value="First Year">First Year</option>
+                                <option value="Second Year">Second Year</option>
+                                <option value="Third Year">Third Year</option>
+                                <option value="Fourth Year">Fourth Year</option>
+                            </select>
+
+                        </div>
+                        <script type="text/javascript">
+                            function CheckCourse(val) {
+                                var element = document.getElementById('courseOther');
+                                if (val == 'Others')
+                                    element.style.display = 'block';
+                                else
+                                    element.style.display = 'none';
+                            }
+                        </script>
+                        <div class="col-md-12">
+                            <label for="course" class="form-label">Course Name</label>
+                            <select class="form-select" name="course" id="course" onchange='CheckCourse(this.value);'
+                                required>
+                                <option selected>Select Course</option>
+                                <option value="BE/BTech">B.E. / B.Tech</option>
+                                <option value="Others">Others</option>
+                            </select>
+                            <input type="text" name="courseOther" id="courseOther" style='display:none;'
+                                placeholder="Enter Course" />
+                        </div>
+                        <script type="text/javascript">
+                            function CheckBranch(val) {
+                                var element = document.getElementById('branchOther');
+                                if (val == 'Others')
+                                    element.style.display = 'block';
+                                else
+                                    element.style.display = 'none';
+                            }
+                        </script>
+                        <div class="col-md-12">
+                            <label for="branch" class="form-label">Branch</label>
+                            <select class="form-select" name="branch" id="branch" onchange='CheckBranch(this.value);'
+                                required>
+                                <option selected>Select Branch</option>
+                                <option value="Computer">Computer</option>
+                                <option value="IT">Information Technology</option>
+                                <option value="Mechanical">Mechanical</option>
+                                <option value="EXTC">Electronics & Telecommunication</option>
+                                <option value="Others">Others</option>
+                            </select>
+                            <input type="text" name="branchOther" id="branchOther" style='display:none;'
+                                placeholder="Enter Branch" />
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="interest" class="form-label">Are you interested to develop a game with
+                                Teknack?</label>
+                            <select class="form-select" name="interest" id="interest" required>
+                                <option selected>Select Option</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="responsible" class="form-label">Will you be following the deadlines and be
+                                responsible in the journey?</label>
+                            <select class="form-select" name="responsible" id="responsible" required>
+                                <option selected>Select Option</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+
+                        <!-- <div class="col-md-12">
+                            <label for="platform" class="form-label">Which platform would you prefer to develop your
+                                game on?</label>
+                            <select class="form-select" name="platform" id="platform" required>
+                                <option selected>Select Option</option>
+                                <option value="Unity">Unity ( Android Game - For Beginners to Intermediate developers)
+                                </option>
+                                <option value="Unreal">Unreal Engine ( Desktop Games - For Intermediate developers)
+                                </option>
+                            </select>
+                        </div> 
+
+                        <div class="col-md-12">
+                            <label for="prevTeknack" class="form-label">Have you been part of Teknack Earlier?</label>
+                            <select class="form-select" name="prevTeknack" id="prevTeknack" required>
+                                <option selected>Select Option</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>-->
+
+          <div class="col-12">
+            <button id="redirectButton" type="submit" class="btn site-btn"
+              >Register for Teknack!</button
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--<div class="container" style="display: flex;justify-content: center;">
+            <iframe id="formEmbedded"
+                src="https://docs.google.com/forms/d/1wgJ-9H--vDmIHf8cJMJraoqvvlZYmw1ADTF70U5azDk/viewform?embedded=true"
+                width="640" height="3100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <br>
+        </div>
+        <div class="container text-center">
+            <a href="#Top" style="text-decoration: none;color: aliceblue;font-size: 20px;">Once submitted, Scroll to
+                Top (or click here)</a>
+        </div>-->
+
+    <div class="modal" tabindex="-1" role="dialog" id="successModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" style="color: #e1e1e1;padding-left: 10px;">
+              Successfully Registered
+            </h4>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button> -->
+          </div>
+          <!--<div class="modal-body">
+                    <p class="pl-3">Join the WhatsApp Group for updates! Stay Tuned!</p>
+                </div>-->
+          <div class="modal-footer">
+            <a href="" target="_blank"
+              ><button type="button" class="btn btn-primary"
+                >Click to Join</button
+              ></a
+            >
+            <button type="button" class="btn btn-secondary" data-dismiss="modal"
+              >Close</button
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Section Begin -->
+
+    <Footer />
+    <!--<script>
+        // $('#form-submit').click(function () {
+        //     $(".modal").modal('show')
+        // });
+        // $('form-submit').click()
+
+        //sd8capricon's
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbxgzJXPuRuIe3UZ100DJutszifw4KUSCMRu7C7VnCH5Q8H-kShPfTK6atB9v3ruHoOF7g/exec'
+
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            $('#form-submit').prop('disabled', true);
+            $('#form-submit').html("...");
+
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => $(".modal").modal('show'))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>-->
+    <script is:inline>
+      // JavaScript code to handle the button click event
+      document
+        .getElementById("redirectButton")
+        .addEventListener("click", function () {
+          // Replace the URL with the link to your Google Form
+          var url = "https://forms.gle/PjVL1p5ds8o5ygBr8";
+
+          var newTab = window.open(url, "_blank");
+          newTab.focus();
+        });
+    </script>
+
+  </body>
+</html>

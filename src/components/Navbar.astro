@@ -1,0 +1,84 @@
+---
+
+---
+<header class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2">
+        <div class="header__logo">
+          <a href="/"><img src="/img/tk-logo.png" alt="Teknack Logo" /></a>
+        </div>
+      </div>
+      <div class="col-lg-10">
+        <div class="header__nav__option">
+          <nav class="header__nav__menu mobile-menu">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li>
+                <a href="/games">Games</a>
+                <ul class="dropdown">
+                  <li><a href="/teknack-2024">Teknack 2024</a></li>
+                  <li><a href="/teknack-2023">Teknack 2023</a></li>
+                  <li><a href="/teknack-2022">Teknack 2022</a></li>
+                  <li><a href="/teknack-2021">Teknack 2021</a></li>
+                  <li><a href="/teknack-2020">Teknack 2020</a></li>
+                  <li><a href="/teknack-2019">Teknack 2019</a></li>
+                </ul>
+              </li>
+              <li><a href="/hall-of-fame">Hall of Fame</a></li>
+              <li><a href="/gallery">Gallery</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header__nav__social">
+            <a href="https://www.instagram.com/acmdbit/"
+              ><i class="fa fa-instagram"></i></a
+            >
+            <a href="https://www.linkedin.com/company/acm-dbit"
+              ><i class="fa fa-linkedin"></i></a
+            >
+            <a href="https://www.facebook.com/ACMDBIT/"
+              ><i class="fa fa-facebook"></i></a
+            >
+            <a href="https://twitter.com/acmdbit"
+              ><i class="fa fa-twitter"></i></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu-wrap"></div>
+  </div>
+</header>
+
+<script is:inline>
+  const navLinks = document.querySelectorAll("li");
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+    const currentPath = window.location.pathname.slice("1");
+
+    linkTag = link.querySelector("a");
+    const hrefArray = linkTag.href.split("/");
+    const thisPath = hrefArray[hrefArray.length - 1];
+
+    if (currentPath === thisPath) {
+      link.classList.add("active");
+    }
+    if (
+      [
+        "teknack-2024",
+        "teknack-2023",
+        "teknack-2022",
+        "teknack-2021",
+        "teknack-2020",
+        "teknack-2019",
+        "games",
+      ].includes(currentPath) &&
+      thisPath === "games"
+    ) {
+      link.classList.add("active");
+    }
+  });
+</script>

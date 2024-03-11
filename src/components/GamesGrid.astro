@@ -1,0 +1,25 @@
+---
+const { games } = Astro.props;
+---
+
+<section class="portfolio spad">
+  <div class="container">
+    <div class="row portfolio__gallery">
+      {
+        games.map((item) => (
+          <div class="col-lg-3 col-md-3 col-xs-6 my-2">
+            <img src={item.imgSrc} alt={item.name} class="games__grid__icon" />
+            <div class="portfolio__item__text">
+              <a href={item.url} target="_blank">
+                <h4>{item.name}</h4>
+              </a>
+              <a href={item.url} target="_blank">
+                <span>Download</span>
+              </a>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

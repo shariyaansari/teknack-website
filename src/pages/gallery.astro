@@ -1,0 +1,91 @@
+---
+import Header from "../components/Header.astro";
+import Preloader from "../components/Preloader.astro";
+import Navbar from "../components/Navbar.astro";
+import InnerPageHero from "../components/InnerPageHero.astro";
+import Footer from "../components/Footer.astro";
+
+const title = "Gallery";
+
+const GALLERY_QUERY_URL =
+  "https://ap-south-1.cdn.hygraph.com/content/cltbq9vfc2yji07usol18sfzd/master?query=query%20Assets%20%7B%0A%20%20galleryImages(orderBy%3A%20year_DESC%2C%20last%3A%20500)%20%7B%0A%20%20%20%20title%0A%20%20%20%20tags%0A%20%20%20%20images%20%7B%0A%20%20%20%20%20%20url%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A";
+
+let galleryData = [];
+const resp = await fetch(GALLERY_QUERY_URL);
+let data = await resp.json();
+data = data.data.galleryImages;
+
+for (let i = 0; i < data.length; i++) {
+  for (let j = 0; j < data[i].images.length; j++) {
+    var item = {
+      title: data[i].title,
+      tags: data[i].tags,
+      classes:
+        "gallery-grid-item col-sm-6 col-lg-4 mb-2" +
+        " " +
+        data[i].tags.join(" "),
+      imgSrc: data[i].images[j].url,
+    };
+    galleryData.push(item);
+  }
+}
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Header title={title} />
+
+    <link
+      rel="stylesheet"
+      href="/vendor/lightbox2/css/lightbox.min.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="/css/gallery.css" type="text/css" />
+  </head>
+
+  <body>
+    <Preloader />
+    <Navbar />
+    <InnerPageHero title={title} />
+
+    <section class="galleryBox">
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="filtering col-sm-12 text-center">
+            <span data-filter="*" class="active">All</span>
+            <span data-filter=".Awards" class="">Awards</span>
+            <span data-filter=".Events" class="">Events</span>
+            <span data-filter=".Training" class="">Training</span>
+            <span data-filter=".Posters" class="">Posters</span>
+          </div>
+          <div class="col-12 text-center w-100">
+            <div class="form-row gallery gallery-grid">
+              {
+                galleryData.map((item) => (
+                  <div class={item.classes}>
+                    <a href={item.imgSrc} data-lightbox="teknack-gallery">
+                      <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                          <img
+                            src={item.imgSrc}
+                            alt={item.title}
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <Footer />
+    <script src="/vendor/lightbox2/js/lightbox.min.js" is:inline></script>
+    <script src="/js/gallery.js" is:inline></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+---
+import Header from "../components/Header.astro";
+import Preloader from "../components/Preloader.astro";
+import Navbar from "../components/Navbar.astro";
+import InnerPageHero from "../components/InnerPageHero.astro";
+import ContactWidget from "../components/ContactWidget.astro";
+import Footer from "../components/Footer.astro";
+
+const title = "Contact Us";
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <Header title={title} />
+</head>
+
+<body>
+    <Preloader />
+    <Navbar />
+    <InnerPageHero title={title} />
+    <ContactWidget/>
+
+    <section class="contact spad">
+        <div class="container">
+            <div class="contact__map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.6013286237526!2d72.88640741437682!3d19.081258256766922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8866a456c9f%3A0x8d1745d15baac575!2sDon%20Bosco%20Institute%20Of%20Technology!5e0!3m2!1sen!2sin!4v1612423051324!5m2!1sen!2sin"
+                    ; height="450" width="100%" style="border:0;"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <Footer />
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+---
+import Header from "../components/Header.astro";
+import Preloader from "../components/Preloader.astro";
+import Navbar from "../components/Navbar.astro";
+import InnerPageHero from "../components/InnerPageHero.astro";
+import Footer from "../components/Footer.astro";
+import gamesData from "../data/gamesData.js";
+import GamesGrid from "../components/GamesGrid.astro";
+
+const title = "2024 Games";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Header title={title} />
+  </head>
+
+  <body>
+    <Preloader />
+    <Navbar />
+    <InnerPageHero title={title} />
+    <GamesGrid games={gamesData["2024"]} />
+    <Footer />
+  </body>
+</html>
