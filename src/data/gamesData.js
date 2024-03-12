@@ -224,206 +224,206 @@ const gamesData = {
         {
             "name": "Zenscape",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.Zenscape",
-            "imgSrc": "/img/logos-21/zenscape.png"
+            "imgSrc": "/img/logos-21/zenscape.webp"
         },
         {
             "name": "Foodunk",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.Foodunk",
-            "imgSrc": "/img/logos-21/foodunk.jpg"
+            "imgSrc": "/img/logos-21/foodunk.webp"
         },
         {
             "name": "Enchanted Woods",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.EnchantedWoods",
-            "imgSrc": "/img/logos-21/enchantedwoods.png"
+            "imgSrc": "/img/logos-21/enchantedwoods.webp"
         },
         {
             "name": "The Trinity Warriors",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.TheTrinityWarriors",
-            "imgSrc": "/img/logos-21/trinitywarriors.png"
+            "imgSrc": "/img/logos-21/trinitywarriors.webp"
         },
         {
             "name": "Shooty Balls",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.ShootyBalls",
-            "imgSrc": "/img/logos-21/shottyballs.png"
+            "imgSrc": "/img/logos-21/shottyballs.webp"
         },
         {
             "name": "The Last Combat",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.TheLastCombat",
-            "imgSrc": "/img/logos-21/TLC_logo.png"
+            "imgSrc": "/img/logos-21/TLC_logo.webp"
         },
         {
             "name": "Circlezoid",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.Circlezoid",
-            "imgSrc": "/img/logos-21/Circlezoid.png"
+            "imgSrc": "/img/logos-21/Circlezoid.webp"
         },
         {
             "name": "Battle Outpost",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.BattleOutpostLastgenicsTD",
-            "imgSrc": "/img/logos-21/BattleOutpost.png"
+            "imgSrc": "/img/logos-21/BattleOutpost.webp"
         },
         {
             "name": "Fruit Orchid",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.FruitOrchid",
-            "imgSrc": "/img/logos-21/FoodOrchid.jpg"
+            "imgSrc": "/img/logos-21/FoodOrchid.webp"
         },
         {
             "name": "Garner",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.Garner",
-            "imgSrc": "/img/logos-21/GARNER_CHESTLOGO.png"
+            "imgSrc": "/img/logos-21/GARNER_CHESTLOGO.webp"
         },
         {
             "name": "Hippie Hangry",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.HippiHangry",
-            "imgSrc": "/img/logos-21/HippiHangryLogo.png"
+            "imgSrc": "/img/logos-21/HippiHangryLogo.webp"
         },
         {
             "name": "Botcalypse",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.Botcalypse",
-            "imgSrc": "/img/logos-21/Botcalypse.png"
+            "imgSrc": "/img/logos-21/Botcalypse.webp"
         },
         {
             "name": "Ghoul Hunter",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.GhoulHunter",
-            "imgSrc": "/img/logos-21/Ghoulhunterlogo.png"
+            "imgSrc": "/img/logos-21/Ghoulhunterlogo.webp"
         },
         {
             "name": "Wave Surfer",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.WaveSurfer",
-            "imgSrc": "/img/logos-21/Logo_Wave_Surfer.png"
+            "imgSrc": "/img/logos-21/Logo_Wave_Surfer.webp"
         },
         {
             "name": "Logic - The Word Game",
             "url": "https://teknack.itch.io/logic-the-word-game",
-            "imgSrc": "/img/logos-21/logic.png"
+            "imgSrc": "/img/logos-21/logic.webp"
         },
         {
             "name": "Kurokami",
             "url": "https://www.mediafire.com/file/pep5irnlprrmu1i/kurokami_v1_1.exe",
-            "imgSrc": "/img/logos-21/unreal.png"
+            "imgSrc": "/img/logos-21/unreal.webp"
         }
     ],
     "2020": [
         {
             "name": "Space Tycoon",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.SpaceTycoon",
-            "imgSrc": "/img/game-logos/spacetyccon.png"
+            "imgSrc": "/img/game-logos/spacetyccon.webp"
         },
         {
             "name": "HoleSync",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.HoleSync",
-            "imgSrc": "/img/game-logos/Holesync.png"
+            "imgSrc": "/img/game-logos/Holesync.webp"
         },
         {
             "name": "Trash Zone",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.TrashZone",
-            "imgSrc": "/img/game-logos/TrashZone_18.png"
+            "imgSrc": "/img/game-logos/TrashZone_18.webp"
         },
         {
             "name": "Space Ranger",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.SpaceRangerrr",
-            "imgSrc": "/img/game-logos/SpaceRanger_9.jpeg"
+            "imgSrc": "/img/game-logos/SpaceRanger_9.webp"
         },
         {
             "name": "Jungle Tales",
             "url": "https://play.google.com/store/apps/details?id=com.Tecknak.JungleTales",
-            "imgSrc": "/img/game-logos/JungleTales_14.png"
+            "imgSrc": "/img/game-logos/JungleTales_14.webp"
         },
         {
             "name": "Dismantle",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.Dismantle",
-            "imgSrc": "/img/game-logos/dismantle.png"
+            "imgSrc": "/img/game-logos/dismantle.webp"
         },
         {
             "name": "The Catacombs",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.TheCatacombs",
-            "imgSrc": "/img/game-logos/The-Catacombs_13.jpg"
+            "imgSrc": "/img/game-logos/The-Catacombs_13.webp"
         },
         {
             "name": "Appetite",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.Appetite",
-            "imgSrc": "/img/game-logos/appetite.png"
+            "imgSrc": "/img/game-logos/appetite.webp"
         },
         {
             "name": "Astro Tera",
             "url": "https://play.google.com/store/apps/details?id=com.Tecknack.AstroTera",
-            "imgSrc": "/img/game-logos/astrotera.jpg"
+            "imgSrc": "/img/game-logos/astrotera.webp"
         },
         {
             "name": "Balley",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.Balley",
-            "imgSrc": "/img/game-logos/balley.png"
+            "imgSrc": "/img/game-logos/balley.webp"
         },
         {
             "name": "Catto Time",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.CattoTime",
-            "imgSrc": "/img/game-logos/cattotime.jpg"
+            "imgSrc": "/img/game-logos/cattotime.webp"
         },
         {
             "name": "SDroids",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.SDROIDS",
-            "imgSrc": "/img/game-logos/sdroids.png"
+            "imgSrc": "/img/game-logos/sdroids.webp"
         },
         {
             "name": "Blocker",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.Blocker",
-            "imgSrc": "/img/game-logos/blocker.png"
+            "imgSrc": "/img/game-logos/blocker.webp"
         },
         {
             "name": "Wiggly Escape",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.WigglyEscape",
-            "imgSrc": "/img/game-logos/wiggly.png"
+            "imgSrc": "/img/game-logos/wiggly.webp"
         },
         {
             "name": "Geflect",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.Geflect",
-            "imgSrc": "/img/game-logos/geflect.png"
+            "imgSrc": "/img/game-logos/geflect.webp"
         },
         {
             "name": "Sprint Racing",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.SprintRacing",
-            "imgSrc": "/img/game-logos/sprint.jpg"
+            "imgSrc": "/img/game-logos/sprint.webp"
         }
     ],
     "2019": [
         {
             "name": "Get Me Out",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.GetMeOut",
-            "imgSrc": "/img/game-logos/GetMeOut.png"
+            "imgSrc": "/img/game-logos/GetMeOut.webp"
         },
         {
             "name": "Upside Down",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.UpSideDown",
-            "imgSrc": "/img/game-logos/UpsideDown.png"
+            "imgSrc": "/img/game-logos/UpsideDown.webp"
         },
         {
             "name": "Coconut Rescue",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.CoconutRescue",
-            "imgSrc": "/img/game-logos/CoconutRescue.png"
+            "imgSrc": "/img/game-logos/CoconutRescue.webp"
         },
         {
             "name": "Battle Tank",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.BattleTank",
-            "imgSrc": "/img/game-logos/BattleTank.png"
+            "imgSrc": "/img/game-logos/BattleTank.webp"
         },
         {
             "name": "Space Breaker",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.SpaceBreaker",
-            "imgSrc": "/img/game-logos/SpaceBreaker.png"
+            "imgSrc": "/img/game-logos/SpaceBreaker.webp"
         },
         {
             "name": "Survival",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.Survival",
-            "imgSrc": "/img/game-logos/Survival.png"
+            "imgSrc": "/img/game-logos/Survival.webp"
         },
         {
             "name": "Stack It",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.StackIT",
-            "imgSrc": "/img/game-logos/StackIt.png"
+            "imgSrc": "/img/game-logos/StackIt.webp"
         },
         {
             "name": "One Fine Night",
             "url": "https://play.google.com/store/apps/details?id=com.Teknack.OneFineNight",
-            "imgSrc": "/img/game-logos/OneFIneNight.png"
+            "imgSrc": "/img/game-logos/OneFIneNight.webp"
         }
     ]
 }
