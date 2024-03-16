@@ -25,7 +25,7 @@
 
 #### Teknack - ACM DBIT
 
-ACM-DBIT chapter took birth in the year 2003 and is in its 20th year of enhancing Dbitians' lives by providing a platform to enjoy learning. Teknack is one of the amazing battlefields provided by ACM for students of not just DBIT but also of other colleges to boost up their creative skills and pump up their technical skills by amalgamating with newer ideas and facts to build up Games that give the players an experience that would last with them forever.
+Teknack is one of the amazing battlefields provided by ACM for students of not just DBIT but also of other colleges to boost up their creative skills and pump up their technical skills by amalgamating with newer ideas and facts to build up Games that give the players an experience that would last with them forever
 
 ## Screenshots
 
