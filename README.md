@@ -46,9 +46,10 @@ Teknack is one of the amazing battlefields provided by ACM for students of not j
 
 ## Screenshots
 
-<img src="./screenshots/1.png" width="50%" /> <br>
-<img src="./screenshots/3.png" width="50%" />
-<img src="./screenshots/4.png" width="50%"/> <img src="./screenshots/5.png" width="50%" />
+<img src="./screenshots/1.png" width="60%" /> <br>
+<img src="./screenshots/2.png" width="60%" />
+<img src="./screenshots/3.png" width="60%" />
+<img src="./screenshots/4.png" width="60%"/> <img src="./screenshots/5.png" width="60%" />
 
 ## Getting Started  <a id="gettingstarted"></a>
 
