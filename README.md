@@ -25,7 +25,7 @@
 
 #### Teknack - ACM DBIT
 
-Teknack is one of the amazing battlefields provided by ACM for students of not just DBIT but also of other colleges to boost up their creative skills and pump up their technical skills by amalgamating with newer ideas and facts to build up Games that give the players an experience that would last with them forever.
+Teknack is one of the amazing battlefields provided by ACM for students of not just DBIT but also of other colleges to boost up their creative skills and pump up their technical skills by integrating with new ideas and facts to build up Games that give the players an experience that would last with them forever.
 
 ## What we Do?
 
@@ -33,16 +33,16 @@ Teknack is one of the amazing battlefields provided by ACM for students of not j
     - We teach and train the students to develop mobile games using the Unity Engine. We guide them throughout the journey from ideation to release of the game.
       
 - Unity Development
-    - The games are developed using the Unity Engine. Developers get hands-on experience on the platform through their journey of development.
+    - The games are developed using the Unity Engine. Developers gain hands-on experience on the platform through their journey of development.
       
 - Gaming Events and Fest
-    - We also host an annual fest named "Teknack" every year and during this fest, the games are published on Google Play Store and various awards are declared for the 
+    - We also host an annual fest named "Teknack" and during this fest, the games are published on Google Play Store and various awards are declared for the 
       developers.
-    -  Also we keep gaming events as part of the fest to inculcate a gaming culture.
+    -  Additionally, we organize gaming events as part of the festival to foster a gaming culture.
   
 - Publishing Games on Play Store
     - The games developed by the students are published on Google Play Store under the banner of Teknack.
-    - This provides them a platform to showcase their talents and bring out to the world, their creativity and technical skills.
+    - This provides them with a platform to showcase their talents and bring out to the world, their creativity and technical skills.
 
 ## Screenshots
 
@@ -51,7 +51,7 @@ Teknack is one of the amazing battlefields provided by ACM for students of not j
 <img src="./screenshots/3.png" width="60%" />
 <img src="./screenshots/4.png" width="60%"/> <img src="./screenshots/5.png" width="60%" />
 
-## Getting Started  <a id="gettingstarted"></a>
+## Getting Started  <a id="getting-started"></a>
 
 #### Step 1
 
