@@ -141,7 +141,52 @@ const gamesData = {
             "name": "Zombie Zapper",
             "url": "https://play.google.com/store/apps/details?id=com.com.teknack.ZombieZapper.ZombieZapper",
             "imgSrc": "/img/logos-23/zombie-zapper.webp"
-        }
+        },
+        {
+            "name": "Chip It!",
+            "url": "https://play.google.com/store/apps/details?id=com.com.Tecknack.Chipit.Chipit",
+            "imgSrc": "/img/logos-23/ChipIt_Logo.webp"
+        },
+        {
+            "name": "Mirror Golf",
+            "url": "https://play.google.com/store/apps/details?id=com.Teknack.MIrrorGolf",
+            "imgSrc": "/img/logos-23/Mirror Golf _Logo.webp"
+        },
+        {
+            "name": "OctoClimb",
+            "url": "https://play.google.com/store/apps/details?id=com.com.Teknack.OctoClimb.OctoClimb",
+            "imgSrc": "/img/logos-23/OctoClimb.webp"
+        },
+        {
+            "name": "Save the Chicken",
+            "url": "https://play.google.com/store/apps/details?id=com.com.Teknack.SaveTheChicken.SaveTheChicken",
+            "imgSrc": "/img/logos-23/savethechicken.webp"
+        },
+        {
+            "name": "SpaceBrawl",
+            "url": "https://play.google.com/store/apps/details?id=com.Teknack.SpaceBrawl",
+            "imgSrc": "/img/logos-23/Space-Brawl.webp"
+        },
+        {
+            "name": "SquareTap",
+            "url": "https://play.google.com/store/apps/details?id=com.Tecknack.SquareTap",
+            "imgSrc": "/img/logos-23/SquareTapLogo.webp"
+        },
+        {
+            "name": "The Barrel Strike",
+            "url": "https://play.google.com/store/apps/details?id=com.com.Teknack.TheBarrelStrike.TheBarrelStrike",
+            "imgSrc": "/img/logos-23/The Barrel Strike.webp"
+        },
+        {
+            "name": "Skyline Blitz",
+            "url": "https://play.google.com/store/apps/details?id=com.com.Teknack.SkylineBlitz.SkylineBlitz",
+            "imgSrc": "/img/logos-23/skyline-blitz.webp"
+        },
+        {
+            "name": "Zappy Ninja",
+            "url": "https://play.google.com/store/apps/details?id=com.teknack.ZappyNinja",
+            "imgSrc": "/img/logos-23/zappyninja.webp"
+        },
     ],
     "2022": [
         {
