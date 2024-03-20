@@ -68,24 +68,6 @@
         setInterval(updateCountdown, 1000);
     });
 
-
-    /*------------------
-        Hero Slider
-    --------------------*/
-    // $('.hero__slider').owlCarousel({
-    //     loop: true,
-    //     dots: true,
-    //     mouseDrag: false,
-    //     animateOut: 'fadeOut',
-    //     animateIn: 'fadeIn',
-    //     items: 1,
-    //     margin: 0,
-    //     smartSpeed: 1200,
-    //     autoHeight: false,
-    //     // autoplay: true,
-    //     autoplay: false,
-    // });
-
     /*------------------
         Testimonial Slider
     --------------------*/
@@ -109,64 +91,5 @@
                 items: 1
             }
         }
-    });
-
-    /*------------------
-        Latest Slider
-    --------------------*/
-    $(".latest__slider").owlCarousel({
-        loop: true,
-        margin: 0,
-        items: 3,
-        dots: true,
-        dotsEach: 2,
-        smartSpeed: 1200,
-        autoHeight: false,
-        autoplay: true,
-        responsive: {
-            992: {
-                items: 3
-            },
-            768: {
-                items: 2
-            },
-            320: {
-                items: 1
-            }
-        }
-    });
-
-    /*------------------
-        Logo Slider
-    --------------------*/
-    $(".logo__carousel").owlCarousel({
-        loop: true,
-        margin: 100,
-        items: 6,
-        dots: false,
-        smartSpeed: 1200,
-        autoHeight: false,
-        autoplay: true,
-        responsive: {
-            992: {
-                items: 5
-            },
-            768: {
-                items: 4
-            },
-            480: {
-                items: 3
-            },
-            320: {
-                items: 2
-            }
-        }
-    });
-
-    /*------------------
-        Video Popup
-    --------------------*/
-    $('.video-popup').magnificPopup({
-        type: 'iframe'
     });
 })(jQuery);

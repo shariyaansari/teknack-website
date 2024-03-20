@@ -437,63 +437,6 @@ ol {
 	display: none;
 }
 
-.hero__slider.owl-carousel .owl-item.active .hero__text span {
-	top: 0;
-	opacity: 1;
-}
-
-.hero__slider.owl-carousel .owl-item.active .hero__text h2 {
-	top: 0;
-	opacity: 1;
-}
-
-.hero__slider.owl-carousel .owl-item.active .hero__text .primary-btn {
-	top: 0;
-	opacity: 1;
-}
-
-.hero__slider.owl-carousel .owl-dots {
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 45px;
-	width: 100%;
-	max-width: 1140px;
-	margin: 0 auto;
-}
-
-.hero__slider.owl-carousel .owl-dots button {
-	color: #adadad;
-	font-size: 18px;
-	font-family: "Play", sans-serif;
-	margin-right: 16px;
-	position: relative;
-	display: inline-block;
-}
-
-.hero__slider.owl-carousel .owl-dots button.active {
-	color: #ffffff;
-}
-
-.hero__slider.owl-carousel .owl-dots button.active:after {
-	background: #ffffff;
-	height: 2px;
-}
-
-.hero__slider.owl-carousel .owl-dots button:after {
-	position: absolute;
-	left: 0;
-	bottom: -6px;
-	width: 100%;
-	height: 1px;
-	background: rgba(255, 255, 255, 0.3);
-	content: "";
-}
-
-.hero__slider.owl-carousel .owl-dots button:last-child {
-	margin-right: 0;
-}
-
 .hero__item {
 	padding-top: 90px;
 	background-image: url("/img/hero/bg-teknack2.webp");
@@ -748,31 +691,6 @@ ol {
 	border: 1px solid #222222 !important;
 	background: url(/img/blog/blog-1.jpg);
 	background-size: cover;
-}
-
-.latest__slider.owl-carousel .owl-item .col-lg-4 {
-	max-width: 100%;
-}
-
-.latest__slider.owl-carousel .owl-dots {
-	text-align: center;
-	padding-top: 35px;
-}
-
-.latest__slider.owl-carousel .owl-dots button {
-	height: 8px;
-	width: 8px;
-	background: rgba(255, 255, 255, 0.2);
-	border-radius: 50%;
-	margin-right: 10px;
-}
-
-.latest__slider.owl-carousel .owl-dots button.active {
-	background: #00bfe7;
-}
-
-.latest__slider.owl-carousel .owl-dots button:last-child {
-	margin-right: 0;
 }
 
 .callto {
@@ -1162,11 +1080,6 @@ ol {
 .logo {
 	background: #100028;
 	padding: 100px 20px;
-}
-
-.logo__carousel.owl-carousel .owl-item img {
-	width: auto;
-	display: inline-block;
 }
 
 .portfolio {
