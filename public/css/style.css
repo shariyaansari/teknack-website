@@ -141,12 +141,6 @@ ol {
 	content: "";
 }
 
-.set-bg {
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: top center;
-}
-
 .spad {
 	padding-top: 100px;
 	padding-bottom: 100px;
@@ -502,6 +496,10 @@ ol {
 
 .hero__item {
 	padding-top: 90px;
+	background-image: url("/img/hero/bg-teknack2.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
 }
 
 .hero__text span {
@@ -802,6 +800,13 @@ ol {
 	margin-bottom: 55px;
 }
 
+.callto-bg {
+	background-image: url("/img/breadcrumb-bg.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+
 .footer {
 	background: #0a0119;
 }
@@ -1016,6 +1021,10 @@ ol {
 
 .testimonial {
 	padding-bottom: 60px;
+	background-image: url("/img/testimonial-bg.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
 }
 
 .testimonial__slider.owl-carousel .owl-item .col-lg-4 {
