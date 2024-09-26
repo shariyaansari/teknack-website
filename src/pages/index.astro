@@ -8,6 +8,7 @@ import CtaWithoutImage from "../components/CtaWithoutImage.astro";
 import Counter from "../components/Counter.astro";
 import Footer from "../components/Footer.astro";
 import awardsData from "../data/awardsData.js";
+import GameSubmission from "../components/GameSubmission.astro";
 
 const title = "Home";
 ---
@@ -22,6 +23,11 @@ const title = "Home";
     <Preloader />
     <Navbar />
     <HeroSection />
+    <CtaWithoutImage
+      title="Want to participate and launch your games through our platform?"
+      btnText="Submit Your Games!!"
+      btnLink="/games"
+    />
     <AwardsGrid title="Teknack 2024 Winners" awardsData={awardsData["2024"]} />
 
     <!-- Services Section Begin -->
