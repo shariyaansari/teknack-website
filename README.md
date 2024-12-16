@@ -58,7 +58,7 @@ Teknack is one of the amazing battlefields provided by ACM for students of not j
 Download or clone this repository by using the command given below:
 
 ```
-git clone https://github.com/flockflair-dbit/teknack-website
+git clone https://github.com/teknackgaming/teknack-website
 ```
 
 #### Step 2
@@ -69,10 +69,6 @@ Go to project root and run the command below
 npm install or yarn install
 npm run dev
 ```
-
-## Contributions <a id="contributions"></a>
-
-![Alt](https://repobeats.axiom.co/api/embed/ce447f0dd070576b5efcc495df1457f692fcdf7e.svg "Repobeats analytics image")
 
 ## Contributors <a id="contributors"></a>
   - [Grejo Joby](https://grejo.in/)<br> 
