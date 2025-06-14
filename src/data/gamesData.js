@@ -1,4 +1,96 @@
 const gamesData = {
+    "2025": [
+        {
+            "name": "Starfall :: Odyssey",
+            "url": "https://play.google.com/store/apps/details?id=com.teknack.starfall",
+            "imgSrc": "/img/logos-24/StarfallOdyssey.webp"
+        },
+        {
+            "name": "Circle Smash",
+            "url": "https://play.google.com/store/apps/details?id=com.com.Teknack.CircleSmash.CircleSmash",
+            "imgSrc": "/img/logos-24/CircleSmash.webp"
+        },
+        {
+            "name": "Blockade Brio",
+            "url": "https://play.google.com/store/apps/details?id=com.SoloGameDev.teknack",
+            "imgSrc": "/img/logos-24/BlockadeBrio.webp"
+        },
+        {
+            "name": "Mystic Island",
+            "url": "https://play.google.com/store/apps/details?id=com.Teknack.MysticIsland",
+            "imgSrc": "/img/logos-24/MysticIsland.webp"
+        },
+        {
+            "name": "Flying Voyager",
+            "url": "https://play.google.com/store/apps/details?id=com.com.Teknack.FlyingVoyager.FlyingVoyager",
+            "imgSrc": "/img/logos-24/FlyingVoyager.webp"
+        },
+        {
+            "name": "Jounce",
+            "url": "https://play.google.com/store/apps/details?id=com.com.Teknack.Jounce.JounceJoyfulBounce",
+            "imgSrc": "/img/logos-24/Jounce.webp"
+        },
+        {
+            "name": "Rina",
+            "url": "https://play.google.com/store/apps/details?id=com.teknack.rina",
+            "imgSrc": "/img/logos-24/rina.webp"
+        },
+        {
+            "name": "Bullseye Blitz",
+            "url": "https://play.google.com/store/apps/details?id=com.com.Teknack.BulleyeBlitz.BullseyeBlitz",
+            "imgSrc": "/img/logos-24/bullseyeblitz.webp"
+        },
+        {
+            "name": "Asterisk",
+            "url": "https://play.google.com/store/apps/details?id=com.com.Teknack.Asterisk.ASTERISK",
+            "imgSrc": "/img/logos-24/Asterix.webp"
+        },
+        {
+            "name": "Memory Bloom",
+            "url": "https://play.google.com/store/apps/details?id=com.com.Teknack.MemoryBloom.MemoryBloom",
+            "imgSrc": "/img/logos-24/memories.webp"
+        },
+        {
+            "name": "Nova Infestation",
+            "url": "https://play.google.com/store/apps/details?id=com.com.Tecknack.NovaInfestation.NovaInfestation",
+            "imgSrc": "/img/logos-24/nova_inf.webp"
+        },
+        {
+            "name": "Abyssal Ruins",
+            "url": "https://play.google.com/store/apps/details?id=com.com.Teknack.AbyssalRuins.AbyssalRuins",
+            "imgSrc": "/img/logos-24/AbyssalRuins_logo.webp"
+        },
+        {
+            "name": "Funky Monkey Swing",
+            "url": "https://play.google.com/store/apps/details?id=com.com.Teknack.FunkyMonkeySwing.FunkyMonkeySwing",
+            "imgSrc": "/img/logos-24/fmswing.webp"
+        },
+        {
+            "name": "Mad Medical Mayhem",
+            "url": "https://play.google.com/store/apps/details?id=com.Teknack.MadMedicalMayhem",
+            "imgSrc": "/img/logos-24/mad_medical_mayhem.webp"
+        },
+        {
+            "name": "Jane Jive",
+            "url": "https://play.google.com/store/apps/details?id=com.JaneJive.teknack",
+            "imgSrc": "/img/logos-24/janejive.webp"
+        },
+        {
+            "name": "Flappy Rocket",
+            "url": "https://play.google.com/store/apps/details?id=com.Teknack.Flappyrocket",
+            "imgSrc": "/img/logos-24/flappy_rocket.webp"
+        },
+        {
+            "name": "Dash",
+            "url": "https://play.google.com/store/apps/details?id=com.Teknack.Dash",
+            "imgSrc": "/img/logos-24/dash.webp"
+        },
+        {
+            "name": "GameOGalaxy",
+            "url": "https://play.google.com/store/apps/details?id=com.DefaultCompany.GameOGalaxy",
+            "imgSrc": "/img/logos-24/game0gal.webp"
+        }
+    ],
     "2024": [
         {
             "name": "Starfall :: Odyssey",

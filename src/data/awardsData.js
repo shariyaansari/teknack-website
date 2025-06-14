@@ -1,4 +1,45 @@
 const awardsData = {
+    "2025": [
+        {
+            awardTitle: "Best Game UI",
+            gameName: "DarkScape",
+            devNames: "Aditya Kate, Rhea Paul, Melvin Anthony",
+            gameLink: "https://tinyurl.com/DarkScapeTeknack",
+            gameIcon: "/img/gallery/teknack-2025/DarkScape_Logo.webp",
+        },
+        {
+            awardTitle: "Best GamePlay",
+            gameName: "LeapQuest",
+            devNames: "Bhumi kadam, Keshav Prajapati, Daniel Sebastian ",
+            gameLink:
+                "https://tinyurl.com/LeapQuestTeaknack",
+            gameIcon: "/img/gallery/teknack-2025/leapQuest_logo.webp",
+        },
+        {
+            awardTitle: "Best Game Concept",
+            gameName: "Knapsack",
+            devNames: "Kadam Suyash Sanjay, Andre Marshal Fernandes, Jowin Paulose",
+            gameLink:
+                "https://tinyurl.com/KnapsackTeknack",
+            gameIcon: "/img/gallery/teknack-2025/knapSack_logo.webp",
+        },
+        {
+            awardTitle: "People's Choice",
+            gameName: "LapXtreme",
+            devNames: "Pranit Chiman,Harshal Bhosale,Rakesh Chaudhary",
+            gameLink:
+                "https://teknack.itch.io/lapxtreme",
+            gameIcon: "/img/gallery/teknack-2025/lapXtrem_logo.webp",
+        },
+        {
+            awardTitle: "Best Gamification",
+            gameName: "Maze Adventure",
+            devNames: "Tanisha Raorane, John Joy, Prasenjit Kole",
+            gameLink:
+                "https://tinyurl.com/MazeAdventureTeknack",
+            gameIcon: "/img/gallery/teknack-2025/MazeAdventure_logo.webp",
+        },
+    ],
     "2024": [
         {
             awardTitle: "Best Game UI",

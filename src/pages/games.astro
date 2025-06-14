@@ -21,6 +21,11 @@ const title = "Games";
     <Navbar />
     <InnerPageHero title={title} />
     <GamesGridMini
+      games={gamesData["2025"].slice(0, 8)}
+      title="Teknack 2025"
+      pagePath="/teknack-2025"
+    />
+    <GamesGridMini
       games={gamesData["2024"].slice(0, 8)}
       title="Teknack 2024"
       pagePath="/teknack-2024"
